@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "request": "Additional source discovery for hero boat data, UV and studio preview",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "api:bpy.types.BlendDataMeshes",
+    "api:bpy.types.BlendData",
+    "api:bpy.types.BlendDataMaterials",
+    "api:bpy.types.BlendDataCameras",
+    "api:bpy.types.BlendDataLights",
+    "api:bpy.types.AreaLight",
+    "api:bpy.types.Camera",
+    "api:bpy.types.Context",
+    "api:bpy.types.ShaderNodeOutputMaterial",
+    "api:bpy.types.NodeSocketFloat",
+    "api:bpy.types.NodeSocketColor"
+  ],
+  "seed_refs": [
+    "bpy.types.AreaLight.html",
+    "bpy.types.BlendData.html",
+    "bpy.types.BlendDataCameras.html",
+    "bpy.types.BlendDataLights.html",
+    "bpy.types.BlendDataMaterials.html",
+    "bpy.types.BlendDataMeshes.html",
+    "bpy.types.Camera.html",
+    "bpy.types.Context.html",
+    "bpy.types.NodeSocketColor.html",
+    "bpy.types.NodeSocketFloat.html",
+    "bpy.types.ShaderNodeOutputMaterial.html"
+  ],
+  "reads": [],
+  "script_sha256": null,
+  "bindings": [],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

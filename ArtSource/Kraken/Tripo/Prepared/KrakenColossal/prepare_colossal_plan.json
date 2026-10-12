@@ -1,0 +1,734 @@
+{
+  "schema_version": 2,
+  "request": "Prepare a supplied colossal Kraken GLB as a static diagnostic Blender and FBX asset, uniformly scale by the maximum horizontal X/Y span, preserve full geometry and PBR images, then freshly reimport FBX for audit.",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "gltf-file-exchange",
+    "fbx-file-exchange",
+    "blend-file-open-save",
+    "scene-transforms-parenting",
+    "api:bpy.ops.object",
+    "api:bpy.types.Context",
+    "api:bpy.types.Scene",
+    "api:bpy.types.Mesh",
+    "api:bpy.types.Object"
+  ],
+  "seed_refs": [
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.gltf",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.gltf",
+    "bpy.ops.object.html",
+    "bpy.ops.wm.html#bpy.ops.wm.open_mainfile",
+    "bpy.ops.wm.html#bpy.ops.wm.save_as_mainfile",
+    "bpy.path.html",
+    "bpy.types.Context.html",
+    "bpy.types.Mesh.html",
+    "bpy.types.Object.html",
+    "bpy.types.Object.html#bpy.types.Object.matrix_parent_inverse",
+    "bpy.types.Object.html#bpy.types.Object.matrix_world",
+    "bpy.types.Object.html#bpy.types.Object.parent",
+    "bpy.types.Scene.html",
+    "mathutils.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.gltf",
+      "source_text_sha256": "8c444cba645f89196e96ed9c3b2328f975429c7e2f09f5a6cc0a2a98ae7242b7",
+      "ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "total_lines": 100,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+      "source_text_sha256": "d86d3bad1b77ed7e4c6b9f5e711a7b0f485f041ac3e6b7ed86c24b5958a21d89",
+      "ranges": [
+        [
+          1,
+          251
+        ]
+      ],
+      "total_lines": 251,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+      "source_text_sha256": "a73d312d3fe22a7f02b589dc2133c53f5dc9cf5c6fe143dd68b4a598d177589f",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "total_lines": 126,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.wm.html#bpy.ops.wm.save_as_mainfile",
+      "source_text_sha256": "0aa8aa49b76d1f87e292c4903ea1069222db400796b87e569e3113051c18a088",
+      "ranges": [
+        [
+          1,
+          106
+        ]
+      ],
+      "total_lines": 106,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.object.html#bpy.ops.object.select_all",
+      "source_text_sha256": "a21a3dae5e8e78f77fff979597624e8edb986e55541a17f7e9616d32c8411444",
+      "ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "total_lines": 30,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.object.html#bpy.ops.object.delete",
+      "source_text_sha256": "65dc3c4bd09e4d2495daafb98973a3fbdbc19a55d216d110f08dbc87ab8a9cba",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.scene",
+      "source_text_sha256": "ecdf0133ff489d89640b5736b8fa6cd0c22ebbc713871cbd288d4607dd6cfe79",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Scene.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.view_layer",
+      "source_text_sha256": "755564e56380f9fea399a11b8a09629cbcd293874d79550f2e8950ccb8a9fc6f",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ViewLayer.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.objects",
+      "source_text_sha256": "0f5e42a21ead226ecea451548a698b821adc809cbc5276c394a2aa399e216e06",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html",
+        "bpy.types.SceneObjects.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.matrix_world",
+      "source_text_sha256": "bf2a87a1fbb641d186db1d37e600caae2fa9c76402f088181665a0abe691c143",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.parent",
+      "source_text_sha256": "d222e21f894ed2cdd5e39b71a7438aaf8fca0ec150e40f2b1820d172d6bee2ea",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.location",
+      "source_text_sha256": "c84dd13697299de4fadb72852b978f3b41533e6952360a8b0522013b8028f281",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.rotation_euler",
+      "source_text_sha256": "40841b225bc73d774f2b52b334ebf63a186d346a54fe490756de57dff89e12b9",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.scale",
+      "source_text_sha256": "b3753bd297c260276f9edcce82c8f4c9459d744862716b969b057e2837d6c8d6",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.select_set",
+      "source_text_sha256": "d6057e2d3c452b455023d0d0ca0623d0f2e748a05b83cf373b7fa8afa9826116",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "total_lines": 12,
+      "links": [
+        "bpy.types.ViewLayer.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+      "source_text_sha256": "7fe1a3a6f8a6bd8d635b1509cdc5e6176dce71b336852dec06feb61e7179a855",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.materials",
+      "source_text_sha256": "56b76d8e7eff05f4b6f1cd5bbf5219e000d4e89e7ed5abdc587686f62144e50d",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.IDMaterials.html",
+        "bpy.types.Material.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+      "source_text_sha256": "7d8a388c0329638497ac7c61c2c7bba03d18d3cb6852a64480ea797516a9dd49",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshUVLoopLayer.html",
+        "bpy.types.UVLoopLayers.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.update",
+      "source_text_sha256": "180b618916c36faaf131faefd6262ea8b54343bd39fe4eb444f37172381a4cb3",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "total_lines": 12,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ViewLayer.html#bpy.types.ViewLayer.objects",
+      "source_text_sha256": "b0bcefc62dec5aefaf7075d8dd6a6937258702e4cbf2472d710715b4007b9cb6",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.LayerObjects.html",
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.LayerObjects.html#bpy.types.LayerObjects.active",
+      "source_text_sha256": "dc93fac7a06077fcfb1f3a41a90c6f8badd8d23c73d000a075f6199860427fba",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ID.html#bpy.types.ID.name",
+      "source_text_sha256": "79cd8ed46a6f9f1c3ac1ebbd8c1b16e9507949cc16b22a376c7fc64e9cc66ee8",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    }
+  ],
+  "script_sha256": "61dcbfa9f90bec1835cb8659cf4ec34d055831814fab7f7b7572116e91732120",
+  "bindings": [
+    {
+      "lines": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        68,
+        69,
+        70,
+        71,
+        73,
+        77,
+        78,
+        79,
+        80,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        101,
+        102,
+        103,
+        104,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        124,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        153,
+        156,
+        157,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        175,
+        176
+      ],
+      "basis": "general_python",
+      "refs": [],
+      "reason": "Argument parsing, numeric span validation, coordinate arithmetic, JSON output and control flow."
+    },
+    {
+      "lines": [
+        29
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.object.html#bpy.ops.object.select_all"
+      ],
+      "reason": "Select startup objects."
+    },
+    {
+      "lines": [
+        30
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.object.html#bpy.ops.object.delete"
+      ],
+      "reason": "Remove startup objects."
+    },
+    {
+      "lines": [
+        34,
+        67
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.Object.html#bpy.types.Object.type",
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Inspect mesh and armature objects."
+    },
+    {
+      "lines": [
+        38,
+        40,
+        43,
+        44,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        98,
+        99,
+        100,
+        108
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Object.html#bpy.types.Object.matrix_world",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+        "bpy.types.Mesh.html#bpy.types.Mesh.materials",
+        "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+        "bpy.types.Mesh.html#bpy.types.Mesh.update"
+      ],
+      "reason": "Read and transform full mesh coordinates without topology reduction, then collect statistics."
+    },
+    {
+      "lines": [
+        72
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.parent"
+      ],
+      "reason": "Reject parented imported mesh."
+    },
+    {
+      "lines": [
+        82
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.import_scene.html#bpy.ops.import_scene.gltf"
+      ],
+      "reason": "Import source GLB with packed images."
+    },
+    {
+      "lines": [
+        105,
+        106,
+        107
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.location",
+        "bpy.types.Object.html#bpy.types.Object.rotation_euler",
+        "bpy.types.Object.html#bpy.types.Object.scale"
+      ],
+      "reason": "Set identity object transforms after coordinate baking."
+    },
+    {
+      "lines": [
+        109
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Set colossal diagnostic object name."
+    },
+    {
+      "lines": [
+        121
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.object.html#bpy.ops.object.select_all"
+      ],
+      "reason": "Clear selection before export."
+    },
+    {
+      "lines": [
+        122
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.select_set"
+      ],
+      "reason": "Select only diagnostic mesh."
+    },
+    {
+      "lines": [
+        123
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.view_layer",
+        "bpy.types.ViewLayer.html#bpy.types.ViewLayer.objects",
+        "bpy.types.LayerObjects.html#bpy.types.LayerObjects.active"
+      ],
+      "reason": "Set active mesh for export."
+    },
+    {
+      "lines": [
+        125
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.wm.html#bpy.ops.wm.save_as_mainfile"
+      ],
+      "reason": "Save high-source Blend."
+    },
+    {
+      "lines": [
+        126
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx"
+      ],
+      "reason": "Export selected full-resolution static mesh and request embedded textures."
+    },
+    {
+      "lines": [
+        155
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx"
+      ],
+      "reason": "Freshly reimport FBX for structural measurement."
+    },
+    {
+      "lines": [
+        158
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.Object.html#bpy.types.Object.type",
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Record every fresh-FBX imported scene object so extra objects are explicit."
+    }
+  ],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

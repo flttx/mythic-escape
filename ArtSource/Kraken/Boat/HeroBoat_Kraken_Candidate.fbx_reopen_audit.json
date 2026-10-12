@@ -1,0 +1,12 @@
+{
+  "kind": "FRESH_FBX_REOPEN_AUDIT",
+  "mesh_objects": 108,
+  "imported_non_mesh_objects": [],
+  "imported_cube_objects": [],
+  "bounds_m": {
+    "length": 7.0,
+    "beam": 2.4000000953674316,
+    "height": 1.6050000144168735
+  },
+  "vertex_total": 2040
+}

@@ -1,0 +1,29 @@
+{
+  "BaseColor": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\TentacleV2\\T_HeroTentacleV2_BaseColor.jpg",
+    "dimensions": [
+      8192,
+      8192
+    ],
+    "sha256": "89005622e520365e9b7ca81d2bb78b053dd0d6e8b4a33f0fb184e105b4535563",
+    "source_image_index": 0
+  },
+  "ORM": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\TentacleV2\\T_HeroTentacleV2_ORM.jpg",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "sha256": "b85c2ae1feea51b3172dcfd914a0308c05f19cf8d2cba7402eb760ada3c141a3",
+    "source_image_index": 1
+  },
+  "NormalGL": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\TentacleV2\\T_HeroTentacleV2_NormalGL.png",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "sha256": "5da7068e08cfbaf8cabc9763635160012b20fd183d65c5180aa3f17e4da14d64",
+    "source_image_index": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\source-boat-v1\\model.glb",
+  "object": "SM_Tripo_HeroBoat_Prepared_NormalsV2",
+  "method": "Blender object scale transform_apply, then translation-only transform_apply; existing FBX was not overwritten.",
+  "original_dimensions": [
+    0.9802497625350952,
+    0.45578712224960327,
+    0.3987570106983185
+  ],
+  "scale_ratio": [
+    7.141037180051736,
+    5.265616080056086,
+    4.025007603475768
+  ],
+  "final_bounds": {
+    "min": [
+      -3.5,
+      -1.1999999284744263,
+      0.0
+    ],
+    "max": [
+      3.5,
+      1.1999999284744263,
+      1.6050000190734863
+    ],
+    "dimensions": [
+      7.0,
+      2.3999998569488525,
+      1.6050000190734863
+    ]
+  },
+  "vertices": 1049617,
+  "polygons": 1978375,
+  "has_custom_normals": true,
+  "status": "PREPARED_NORMALSV2_NOT_UE_VALIDATED"
+}

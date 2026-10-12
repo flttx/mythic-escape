@@ -1,0 +1,29 @@
+{
+  "BaseColor": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\KrakenV5\\T_HeroKrakenV5_BaseColor.jpg",
+    "dimensions": [
+      8192,
+      8192
+    ],
+    "sha256": "1709c88cfd415d9cb7355b347c73da01444b6e03b312274f003991230efa32d4",
+    "source_image_index": 0
+  },
+  "ORM": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\KrakenV5\\T_HeroKrakenV5_ORM.jpg",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "sha256": "8246a8a0752bbbbaf528eb0a1d29ccd13b401aa595393dd11c580fe9ff234f86",
+    "source_image_index": 1
+  },
+  "NormalGL": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\KrakenV5\\T_HeroKrakenV5_NormalGL.png",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "sha256": "30fd979fcb421a678cb23a8e5321d62c2ec68996391afee4f45223b717329491",
+    "source_image_index": 2
+  }
+}

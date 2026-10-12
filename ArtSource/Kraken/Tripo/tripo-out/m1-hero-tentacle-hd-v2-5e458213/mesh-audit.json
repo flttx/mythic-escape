@@ -1,0 +1,215 @@
+{
+  "schema": "mythic-glb-audit/1",
+  "scope": "offline structural metadata only; not an artistic, rigging, UE import, or runtime quality verdict",
+  "input": "ArtSource\\Kraken\\Tripo\\tripo-out\\m1-hero-tentacle-hd-v2-5e458213\\model.glb",
+  "file": {
+    "byte_length": 79364140,
+    "sha256": "5d9ce559dc938bc56b028d7743a957b6328c9b3bd3d7865bf3c4c618b58729b0"
+  },
+  "glb": {
+    "version": 2,
+    "chunks": [
+      {
+        "type": "JSON",
+        "byte_length": 2164
+      },
+      {
+        "type": "BIN",
+        "byte_length": 79361948
+      }
+    ]
+  },
+  "asset": {
+    "version": "2.0",
+    "generator": "https://tripo3d.ai"
+  },
+  "geometry": {
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "vertex_count_sum_per_primitive": 999866,
+    "triangle_count_sum": 1939826,
+    "meshes": [
+      {
+        "index": 0,
+        "name": "tripo_mesh_5e458213-e26b-4e2e-ba8c-80703dfea75a",
+        "primitive_count": 1,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "vertex_count": 999866,
+            "triangle_count": 1939826,
+            "triangle_note": null,
+            "attributes": {
+              "POSITION": 1,
+              "NORMAL": 3,
+              "TEXCOORD_0": 2
+            },
+            "indices_accessor": 0,
+            "material": 0
+          }
+        ]
+      }
+    ],
+    "accessor_count": 4,
+    "accessors": [
+      {
+        "bufferView": 0,
+        "componentType": 5125,
+        "count": 5819478,
+        "type": "SCALAR",
+        "min": [
+          0.0
+        ],
+        "max": [
+          999865.0
+        ]
+      },
+      {
+        "bufferView": 1,
+        "byteOffset": 0,
+        "componentType": 5126,
+        "count": 999866,
+        "type": "VEC3",
+        "min": [
+          -0.09883864969015121,
+          -0.08158926665782928,
+          -0.4899696409702301
+        ],
+        "max": [
+          0.09898925572633743,
+          0.08176801353693008,
+          0.4898317754268646
+        ]
+      },
+      {
+        "bufferView": 2,
+        "byteOffset": 0,
+        "componentType": 5126,
+        "count": 999866,
+        "type": "VEC2",
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "bufferView": 3,
+        "byteOffset": 0,
+        "componentType": 5126,
+        "count": 999866,
+        "type": "VEC3",
+        "min": [
+          -0.9999933838844299,
+          -0.9999964833259583,
+          -0.999996542930603
+        ],
+        "max": [
+          0.9999971389770508,
+          0.9999980330467224,
+          0.9999977350234985
+        ]
+      }
+    ]
+  },
+  "transformed_bounds": {
+    "computed": true,
+    "min": [
+      -0.09883864969015121,
+      -0.08158926665782928,
+      -0.4899696409702301
+    ],
+    "max": [
+      0.09898925572633743,
+      0.08176801353693008,
+      0.4898317754268646
+    ],
+    "dimensions": [
+      0.19782790541648865,
+      0.16335728019475937,
+      0.9798014163970947
+    ],
+    "limitations": []
+  },
+  "images": [
+    {
+      "index": 0,
+      "name": "Color_5e458213-e26b-4e2e-ba8c-80703dfea75a",
+      "kind": "embedded",
+      "declared_mime_type": "image/jpeg",
+      "detected_mime_type": "image/jpeg",
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "read_status": "read"
+    },
+    {
+      "index": 1,
+      "name": "ORM_5e458213-e26b-4e2e-ba8c-80703dfea75a",
+      "kind": "embedded",
+      "declared_mime_type": "image/jpeg",
+      "detected_mime_type": "image/jpeg",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "read_status": "read"
+    },
+    {
+      "index": 2,
+      "name": "NormalGL_5e458213-e26b-4e2e-ba8c-80703dfea75a",
+      "kind": "embedded",
+      "declared_mime_type": "image/png",
+      "detected_mime_type": "image/png",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "read_status": "read"
+    }
+  ],
+  "materials": {
+    "material_count": 1,
+    "materials": [
+      {
+        "index": 0,
+        "name": "tripo_material_5e458213-e26b-4e2e-ba8c-80703dfea75a",
+        "base_color_factor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic_factor": 1.0,
+        "roughness_factor": 1.0,
+        "texture_image_indices": {
+          "baseColor": 0,
+          "normal": 2,
+          "metallicRoughness": 1
+        }
+      }
+    ],
+    "texture_image_reference_counts": {
+      "baseColor": {
+        "0": 1
+      },
+      "normal": {
+        "2": 1
+      },
+      "metallicRoughness": {
+        "1": 1
+      }
+    }
+  },
+  "skins": {
+    "count": 0
+  },
+  "animations": {
+    "count": 0
+  }
+}

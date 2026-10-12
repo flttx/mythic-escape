@@ -1,0 +1,1523 @@
+{
+  "schema_version": 2,
+  "request": "Create a 5m structurally credible clinker wooden hero boat, UV/PBR texture, FBX and blend, audit and preview render",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "api:bpy.types.AreaLight",
+    "api:bpy.types.BlendData",
+    "api:bpy.types.BlendDataCameras",
+    "api:bpy.types.BlendDataLights",
+    "api:bpy.types.BlendDataMaterials",
+    "api:bpy.types.BlendDataMeshes",
+    "api:bpy.types.Camera",
+    "api:bpy.types.Context",
+    "api:bpy.types.NodeSocketColor",
+    "api:bpy.types.NodeSocketFloat",
+    "api:bpy.types.ShaderNodeOutputMaterial",
+    "blend-file-open-save",
+    "fbx-file-exchange",
+    "geometry-bevel",
+    "image-texture-sampling",
+    "mesh-from-explicit-data",
+    "render-still-or-animation",
+    "scene-evaluated-geometry",
+    "scene-object-assembly",
+    "surface-principled-material"
+  ],
+  "seed_refs": [
+    "bmesh.ops.html#bmesh.ops.bevel",
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+    "bpy.ops.render.html#bpy.ops.render.render",
+    "bpy.ops.wm.html#bpy.ops.wm.open_mainfile",
+    "bpy.ops.wm.html#bpy.ops.wm.save_as_mainfile",
+    "bpy.path.html",
+    "bpy.types.AreaLight.html",
+    "bpy.types.BevelModifier.html",
+    "bpy.types.BlendData.html",
+    "bpy.types.BlendDataCameras.html",
+    "bpy.types.BlendDataImages.html",
+    "bpy.types.BlendDataLights.html",
+    "bpy.types.BlendDataMaterials.html",
+    "bpy.types.BlendDataMeshes.html",
+    "bpy.types.BlendDataObjects.html#bpy.types.BlendDataObjects.new",
+    "bpy.types.Camera.html",
+    "bpy.types.CollectionObjects.html#bpy.types.CollectionObjects.link",
+    "bpy.types.Context.html",
+    "bpy.types.Context.html#bpy.types.Context.evaluated_depsgraph_get",
+    "bpy.types.Depsgraph.html",
+    "bpy.types.Depsgraph.html#bpy.types.Depsgraph.object_instances",
+    "bpy.types.ID.html#bpy.types.ID.evaluated_get",
+    "bpy.types.ImageFormatSettings.html",
+    "bpy.types.Material.html",
+    "bpy.types.Material.html#bpy.types.Material.node_tree",
+    "bpy.types.Mesh.html#bpy.types.Mesh.from_pydata",
+    "bpy.types.Mesh.html#bpy.types.Mesh.validate",
+    "bpy.types.NodeLinks.html",
+    "bpy.types.NodeSocketColor.html",
+    "bpy.types.NodeSocketFloat.html",
+    "bpy.types.Nodes.html",
+    "bpy.types.Object.html#bpy.types.Object.to_mesh",
+    "bpy.types.ObjectModifiers.html#bpy.types.ObjectModifiers.new",
+    "bpy.types.RenderSettings.html",
+    "bpy.types.Scene.html",
+    "bpy.types.ShaderNodeBsdfPrincipled.html",
+    "bpy.types.ShaderNodeOutputMaterial.html",
+    "bpy.types.ShaderNodeTexImage.html",
+    "info_gotchas_meshes.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.from_pydata",
+      "source_text_sha256": "7e60c19f0afdd6577841b0cb7eb236eccfe466bebaedbc2fc12b506b649f635a",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "total_lines": 26,
+      "links": [
+        "bpy.types.Mesh.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.validate",
+      "source_text_sha256": "d4908f3ebaf2400cc622fd0dc71e784ed6d10ff638eaf81d282aeff5c0598481",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendDataObjects.html#bpy.types.BlendDataObjects.new",
+      "source_text_sha256": "f42fca05c40e4b311792c7102b154469c07089f1ed060a6b25f06cbfdc2f65cf",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy.types.ID.html",
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.CollectionObjects.html#bpy.types.CollectionObjects.link",
+      "source_text_sha256": "58ad492896561dd14f0d06aa1f0575ee7391668889e6a9e051de69d6c6c6adb7",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Material.html#bpy.types.Material.use_nodes",
+      "source_text_sha256": "34554feead581687dd4e3ec960333e30a85fa3350489476a20ceab98d0bfb9e8",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "total_lines": 12,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Material.html#bpy.types.Material.node_tree",
+      "source_text_sha256": "8aa891110340772fd47c36075fc976fca2e529d07eae80f1ad25e80f9dbdb940",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.NodeTree.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Nodes.html",
+      "source_text_sha256": "30584aafb858a070fd83363876d062a98ea3c44e13d3d9f524c52c0b1f7cb5b3",
+      "ranges": [
+        [
+          1,
+          180
+        ]
+      ],
+      "total_lines": 180,
+      "links": [
+        "bpy.types.Node.html",
+        "bpy.types.NodeTree.html",
+        "bpy.types.Struct.html",
+        "bpy.types.bpy_prop_collection.html",
+        "bpy.types.bpy_struct.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.NodeLinks.html",
+      "source_text_sha256": "c16c1e400c3e0c601bb72f03cce52835e2a64f6a56f6e9149f11b70a8fb3674d",
+      "ranges": [
+        [
+          1,
+          182
+        ]
+      ],
+      "total_lines": 182,
+      "links": [
+        "bpy.types.NodeLink.html",
+        "bpy.types.NodeSocket.html",
+        "bpy.types.NodeTree.html",
+        "bpy.types.Struct.html",
+        "bpy.types.bpy_prop_collection.html",
+        "bpy.types.bpy_struct.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ShaderNodeBsdfPrincipled.html",
+      "source_text_sha256": "c01cd11cc372ca38269526549fde2deb9ca17bad092759325428384a39344861",
+      "ranges": [
+        [
+          1,
+          399
+        ]
+      ],
+      "total_lines": 399,
+      "links": [
+        "bpy.types.Node.html",
+        "bpy.types.NodeInternal.html",
+        "bpy.types.NodeInternalSocketTemplate.html",
+        "bpy.types.ShaderNode.html",
+        "bpy.types.Struct.html",
+        "bpy.types.bpy_struct.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ShaderNodeTexImage.html",
+      "source_text_sha256": "00c62f77bccae5e1d798013a83237fc6f876556a49975248a68b5de3040d6d76",
+      "ranges": [
+        [
+          1,
+          463
+        ]
+      ],
+      "total_lines": 463,
+      "links": [
+        "bpy.types.ColorMapping.html",
+        "bpy.types.Image.html",
+        "bpy.types.ImageUser.html",
+        "bpy.types.Node.html",
+        "bpy.types.NodeInternal.html",
+        "bpy.types.NodeInternalSocketTemplate.html",
+        "bpy.types.ShaderNode.html",
+        "bpy.types.Struct.html",
+        "bpy.types.TexMapping.html",
+        "bpy.types.bpy_struct.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendDataImages.html#bpy.types.BlendDataImages.load",
+      "source_text_sha256": "f03c50bbc96cefe5cea33368c188a8a54857c94b1834ae5f12455b96f7b7f091",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy.types.Image.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+      "source_text_sha256": "d86d3bad1b77ed7e4c6b9f5e711a7b0f485f041ac3e6b7ed86c24b5958a21d89",
+      "ranges": [
+        [
+          1,
+          251
+        ]
+      ],
+      "total_lines": 251,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+      "source_text_sha256": "a73d312d3fe22a7f02b589dc2133c53f5dc9cf5c6fe143dd68b4a598d177589f",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "total_lines": 126,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.wm.html#bpy.ops.wm.save_as_mainfile",
+      "source_text_sha256": "0aa8aa49b76d1f87e292c4903ea1069222db400796b87e569e3113051c18a088",
+      "ranges": [
+        [
+          1,
+          106
+        ]
+      ],
+      "total_lines": 106,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.wm.html#bpy.ops.wm.open_mainfile",
+      "source_text_sha256": "1c334639d356ae2ee9cdc0f9273f7a0700f9d967b8932750c3188a85d153c5f0",
+      "ranges": [
+        [
+          1,
+          106
+        ]
+      ],
+      "total_lines": 106,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+      "source_text_sha256": "7d8a388c0329638497ac7c61c2c7bba03d18d3cb6852a64480ea797516a9dd49",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshUVLoopLayer.html",
+        "bpy.types.UVLoopLayers.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.materials",
+      "source_text_sha256": "56b76d8e7eff05f4b6f1cd5bbf5219e000d4e89e7ed5abdc587686f62144e50d",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.IDMaterials.html",
+        "bpy.types.Material.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+      "source_text_sha256": "7fe1a3a6f8a6bd8d635b1509cdc5e6176dce71b336852dec06feb61e7179a855",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.loops",
+      "source_text_sha256": "d1f9fdd0f8a0dec733f62ea42d97c63211aea5b0e5505c0c438ed6704f7bea88",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshLoop.html",
+        "bpy.types.MeshLoops.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.calc_loop_triangles",
+      "source_text_sha256": "afe05f4e4955ef186f9c02441337365d60a46b681881df2850dc69de221ab0a2",
+      "ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "total_lines": 4,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.loop_triangles",
+      "source_text_sha256": "455d86295833ecac01e5aaa73105fbad4b749cfcbe264605bb184922558b6f26",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshLoopTriangle.html",
+        "bpy.types.MeshLoopTriangles.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Node.html#bpy.types.Node.inputs",
+      "source_text_sha256": "5233d95dd64d5e9f1fce3d227570f76113d5740e6ef36d8b2dda2a534cba91dc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.NodeInputs.html",
+        "bpy.types.NodeSocket.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Node.html#bpy.types.Node.outputs",
+      "source_text_sha256": "4f03c9e5e76c3576688eeaf0e0e3429dd96528f432853356a67f53386f9df9d7",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.NodeOutputs.html",
+        "bpy.types.NodeSocket.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ShaderNodeTexImage.html#bpy.types.ShaderNodeTexImage.image",
+      "source_text_sha256": "40043182c2329a7cd53fdf8f802ca12b181a75d326e57e3463a40b083aa71277",
+      "ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "total_lines": 6,
+      "links": [
+        "bpy.types.Image.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.location",
+      "source_text_sha256": "c84dd13697299de4fadb72852b978f3b41533e6952360a8b0522013b8028f281",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.rotation_euler",
+      "source_text_sha256": "40841b225bc73d774f2b52b334ebf63a186d346a54fe490756de57dff89e12b9",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.collection",
+      "source_text_sha256": "faeffc442bd03b51b27835a5122a7662a10002a30433dc387c3e6c0867cb7936",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Collection.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.camera",
+      "source_text_sha256": "34214e433e6c2d06b5ab870a3143c81818e0f12edbb334f2b2e7588ed2e3965a",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.render",
+      "source_text_sha256": "85f45072bf9a4a5c2fa320ea11232e16dd70455b36019e147eb44aacdccd66a9",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.RenderSettings.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html",
+      "source_text_sha256": "3f91898610df0eabea65a09e42eeb3d09898c22a44a52f537b438cd292c995eb",
+      "ranges": [
+        [
+          1,
+          92
+        ]
+      ],
+      "total_lines": 994,
+      "links": [
+        "bmesh.html",
+        "bpy.types.AnimData.html",
+        "bpy.types.Attribute.html",
+        "bpy.types.AttributeGroupMesh.html",
+        "bpy.types.BlendData.html",
+        "bpy.types.BlendDataMeshes.html",
+        "bpy.types.FloatAttribute.html",
+        "bpy.types.ID.html",
+        "bpy.types.IDMaterials.html",
+        "bpy.types.Key.html",
+        "bpy.types.LoopColors.html",
+        "bpy.types.Material.html",
+        "bpy.types.Mesh.html",
+        "bpy.types.MeshEdge.html",
+        "bpy.types.MeshEdges.html",
+        "bpy.types.MeshLoop.html",
+        "bpy.types.MeshLoopColorLayer.html",
+        "bpy.types.MeshLoopTriangle.html",
+        "bpy.types.MeshLoopTriangles.html",
+        "bpy.types.MeshLoops.html",
+        "bpy.types.MeshNormalValue.html",
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html",
+        "bpy.types.MeshSkinVertexLayer.html",
+        "bpy.types.MeshUVLoopLayer.html",
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html",
+        "bpy.types.Object.html",
+        "bpy.types.ReadOnlyInteger.html",
+        "bpy.types.Struct.html",
+        "bpy.types.UVLoopLayers.html",
+        "bpy.types.bpy_prop_array.html",
+        "bpy.types.bpy_prop_collection.html",
+        "bpy.types.bpy_struct.html",
+        "info_gotchas_meshes.html",
+        "mathutils.html"
+      ],
+      "complete": false
+    },
+    {
+      "ref": "bpy.types.BlendDataMeshes.html#bpy.types.BlendDataMeshes.new",
+      "source_text_sha256": "849c6616e77e5188edec4da72d92206273730a7a636f9255fd552b12f61db336",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "total_lines": 16,
+      "links": [
+        "bpy.types.Mesh.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendDataObjects.html#bpy.types.BlendDataObjects.remove",
+      "source_text_sha256": "2be1db52f03a2144a06be02781369e66ecb0596f895d41cca18efbe906d8b9dd",
+      "ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "total_lines": 18,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendDataMaterials.html#bpy.types.BlendDataMaterials.new",
+      "source_text_sha256": "d7c2a2cacca63c5dca99ada04a91360fd5fea764978533300edebbaed1d5f898",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "total_lines": 16,
+      "links": [
+        "bpy.types.Material.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendDataCameras.html#bpy.types.BlendDataCameras.new",
+      "source_text_sha256": "67c72a5649fb0bbf00fbba5081556df8d2f508dab44dfe94197fe91a294e3b4e",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "total_lines": 16,
+      "links": [
+        "bpy.types.Camera.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendDataLights.html#bpy.types.BlendDataLights.new",
+      "source_text_sha256": "e388022fed1e02fa6876bcc9a8d16a7f74bb014e8fde6728fcb8cd0fd3e4e189",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy.types.Light.html",
+        "bpy_types_enum_items/light_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.AreaLight.html#bpy.types.AreaLight.energy",
+      "source_text_sha256": "ffe4fabb86cfdadb8093f2dfb5ad73a5b8db8a86c0b7d8bdd1ca5f21e0c8c0e3",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.AreaLight.html#bpy.types.AreaLight.size",
+      "source_text_sha256": "513f3ff44707ffeaf91a16e5d1853bc56bd1d1af65c9cbee9f22108f43e37848",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Camera.html#bpy.types.Camera.lens",
+      "source_text_sha256": "53903eec74ed2ab9c1ec881bd7f2b819bae73223ff448805e7647f9c285eb067",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.scene",
+      "source_text_sha256": "ecdf0133ff489d89640b5736b8fa6cd0c22ebbc713871cbd288d4607dd6cfe79",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Scene.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.UVLoopLayers.html#bpy.types.UVLoopLayers.new",
+      "source_text_sha256": "cee9b16bceb8daff90b55805eec803ca95b7a09ca5e05afad7f631b514390ba7",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy.types.MeshUVLoopLayer.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshUVLoopLayer.html#bpy.types.MeshUVLoopLayer.data",
+      "source_text_sha256": "e988ab42d869500992d221c6df8d5f3c034403957dfa6d3feb93f982e45cfbd4",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshUVLoop.html",
+        "bpy.types.bpy_prop_collection.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshUVLoop.html#bpy.types.MeshUVLoop.uv",
+      "source_text_sha256": "9b0986ba41718f2199b3b73e4db2bb64a91fd0d4ee2bb768abe8f4458b6e04ab",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.IDMaterials.html#bpy.types.IDMaterials.append",
+      "source_text_sha256": "2b05208af4f255a04cc19f3b78a7946b55ca7ce57665486d40b1687d1101b3c5",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Material.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.NodeSocketFloat.html#bpy.types.NodeSocketFloat.default_value",
+      "source_text_sha256": "fb67fddcd5307c02cfebe4bd0da1d3b6b4fc081b938e784892e89ac6a1f7ee8f",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.NodeSocketColor.html#bpy.types.NodeSocketColor.default_value",
+      "source_text_sha256": "b06d952fa5a75b174779d7725b3d97f7b0cb70610a906f8edfcd84e7ace3db52",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.bpy_prop_array.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ShaderNodeOutputMaterial.html#bpy.types.ShaderNodeOutputMaterial",
+      "source_text_sha256": "baa53bcba55863b440fb1ed568636c1eaf26e1f629b5ab894bc8115743570a8f",
+      "ranges": [
+        [
+          1,
+          109
+        ]
+      ],
+      "total_lines": 109,
+      "links": [
+        "bpy.types.NodeInternalSocketTemplate.html",
+        "bpy.types.Struct.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.RenderSettings.html#bpy.types.RenderSettings.engine",
+      "source_text_sha256": "f989aa949291f1c580632b2e87b593234e0d765bcac9a39a2f8b577e52aaa1ca",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.RenderSettings.html#bpy.types.RenderSettings.resolution_x",
+      "source_text_sha256": "a5f962d167d3720872236456afe7f3870494fa310d8305cbd18af811c31725eb",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.RenderSettings.html#bpy.types.RenderSettings.resolution_y",
+      "source_text_sha256": "b13858ea9b99a679e7f967814efa8867418534168596ee6ca7d5cc3b6ccd4b54",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.RenderSettings.html#bpy.types.RenderSettings.resolution_percentage",
+      "source_text_sha256": "5fe6c6b28d1ff4d962bf495d8c8e9cdaf8087e1ba54dd4a7eeece9f3e090a4b5",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.RenderSettings.html#bpy.types.RenderSettings.filepath",
+      "source_text_sha256": "2335a39e3166a2cdadea1c69c83ffb99979d78cfc1de345d7f42db3dee7e3cdd",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.RenderSettings.html#bpy.types.RenderSettings.image_settings",
+      "source_text_sha256": "b3be6651c330a49299c21eb77cf2d5c6d5bc29f85f6ea2b42ef37e950d5dd9f5",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ImageFormatSettings.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ImageFormatSettings.html#bpy.types.ImageFormatSettings.file_format",
+      "source_text_sha256": "4a3d92cff8564a1ed572656454f1510ecaae9e677240b9e90eaf2032a9b1d181",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/image_type_all_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.render.html#bpy.ops.render.render",
+      "source_text_sha256": "bf1471cfb404fb4a81f30f9bbc694a9aed156b0fe7641193afe2bf1d883ab872",
+      "ranges": [
+        [
+          1,
+          38
+        ]
+      ],
+      "total_lines": 38,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.objects",
+      "source_text_sha256": "1f693de52c16552fbc87df76b3c07e3dc319ddd7821a2b21b922c72f989bf786",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataObjects.html",
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.meshes",
+      "source_text_sha256": "8bdba42fde1e3646ba0228cc53dd46b740a851956c724ed2ca8bd9a749183f6d",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataMeshes.html",
+        "bpy.types.Mesh.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.materials",
+      "source_text_sha256": "cad43733cbfa3a8d307dbd8e58ab0e2b96e8ed4f78e9d395145c5bb63501045c",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataMaterials.html",
+        "bpy.types.Material.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.cameras",
+      "source_text_sha256": "245c1efcc5eb76e255d876b6f9a0f9d6abcde15e31ab8dccbc1a89f30c781d69",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataCameras.html",
+        "bpy.types.Camera.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.lights",
+      "source_text_sha256": "f2de20b812affa004971970e489cd8c3f50608c4d297cfb93f9df94466e002d0",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataLights.html",
+        "bpy.types.Light.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.images",
+      "source_text_sha256": "9035c00667e5b12c6feb6a540c65e8ffd2ac541dcd2f32171a74fe381811d5fa",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataImages.html",
+        "bpy.types.Image.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.NodeSocket.html#bpy.types.NodeSocket.name",
+      "source_text_sha256": "16c101c1d85dea85ecc9f301b076bea11d7fcfe5ab4193f17efea45a1fce6d1a",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.NodeTree.html#bpy.types.NodeTree.nodes",
+      "source_text_sha256": "d0aad82c6d073f6a1b74838a251f2fdb06274ca8a1edfa01bdb2867a2e24d568",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Node.html",
+        "bpy.types.Nodes.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.NodeTree.html#bpy.types.NodeTree.links",
+      "source_text_sha256": "3b83e7be06f3d5cc5ce287f5ca3d76734f355a54aaa42460aeb7a4380d2828f4",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.NodeLink.html",
+        "bpy.types.NodeLinks.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Collection.html#bpy.types.Collection.objects",
+      "source_text_sha256": "12b4b3716eb991b389369ecca03d1b3cf3962e68639489e18104f6ee082e7fa3",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.CollectionObjects.html",
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy_types_enum_items/light_type_items.html",
+      "source_text_sha256": "19a2dfcf15a72968aeb967919502e92f7dd2585babd2635f7987171647fa50c2",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "total_lines": 26,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.select_set",
+      "source_text_sha256": "d6057e2d3c452b455023d0d0ca0623d0f2e748a05b83cf373b7fa8afa9826116",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "total_lines": 12,
+      "links": [
+        "bpy.types.ViewLayer.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.parent",
+      "source_text_sha256": "d222e21f894ed2cdd5e39b71a7438aaf8fca0ec150e40f2b1820d172d6bee2ea",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Material.html#bpy.types.Material.diffuse_color",
+      "source_text_sha256": "a323e38b1795c27236dac4a3faa0375736c588d09ce96eb7ad1e85b37271d008",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.bpy_prop_array.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Material.html#bpy.types.Material.metallic",
+      "source_text_sha256": "ccca1773035e9c8a44c768985aa62b12f487586d6f5979885626a98e1a9a0c2b",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Material.html#bpy.types.Material.roughness",
+      "source_text_sha256": "9f1b8020dc4ea830c95b57fd407fadb05c33a5fda29a34e0b9df65edcaeee454",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ID.html#bpy.types.ID.name",
+      "source_text_sha256": "79cd8ed46a6f9f1c3ac1ebbd8c1b16e9507949cc16b22a376c7fc64e9cc66ee8",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshPolygon.html#bpy.types.MeshPolygon.loop_indices",
+      "source_text_sha256": "c2956610e468de23a749f979b470a90ff908e0b0a889c2e3737dd409d27c3bd1",
+      "ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "total_lines": 4,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshLoop.html#bpy.types.MeshLoop.vertex_index",
+      "source_text_sha256": "f9893a3eb192e217181e19fe1aa68d80ee4b4cd57380e711fb3923c470b80c2d",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.objects",
+      "source_text_sha256": "0f5e42a21ead226ecea451548a698b821adc809cbc5276c394a2aa399e216e06",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html",
+        "bpy.types.SceneObjects.html"
+      ],
+      "complete": true
+    }
+  ],
+  "script_sha256": "60617928d04e51fbad02d2a1945bb37d4ece06a97fa33c2e575993f7a256ce17",
+  "bindings": [
+    {
+      "lines": [
+        28
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.BlendDataMaterials.html#bpy.types.BlendDataMaterials.new"
+      ],
+      "reason": "Creates named material datablocks."
+    },
+    {
+      "lines": [
+        29
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Material.html#bpy.types.Material.diffuse_color"
+      ],
+      "reason": "Assigns the documented four-component material diffuse color."
+    },
+    {
+      "lines": [
+        30
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Material.html#bpy.types.Material.metallic"
+      ],
+      "reason": "Assigns the documented metallic scalar in its supported range."
+    },
+    {
+      "lines": [
+        31
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Material.html#bpy.types.Material.roughness"
+      ],
+      "reason": "Assigns the documented roughness scalar in its supported range."
+    },
+    {
+      "lines": [
+        41
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.BlendDataMeshes.html#bpy.types.BlendDataMeshes.new"
+      ],
+      "reason": "Creates named mesh datablocks."
+    },
+    {
+      "lines": [
+        42,
+        43
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Mesh.html#bpy.types.Mesh.from_pydata",
+        "bpy.types.Mesh.html#bpy.types.Mesh.validate"
+      ],
+      "reason": "Builds coordinate-defined mesh faces and validates input geometry as instructed by the source."
+    },
+    {
+      "lines": [
+        45
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Mesh.html#bpy.types.Mesh.materials"
+      ],
+      "reason": "Adds a material through the mesh material collection."
+    },
+    {
+      "lines": [
+        48
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.UVLoopLayers.html#bpy.types.UVLoopLayers.new"
+      ],
+      "reason": "Adds the named UV0 mesh UV layer."
+    },
+    {
+      "lines": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+        "bpy.types.MeshPolygon.html#bpy.types.MeshPolygon.loop_indices",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+        "bpy.types.Mesh.html#bpy.types.Mesh.loops",
+        "bpy.types.MeshLoop.html#bpy.types.MeshLoop.vertex_index",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+        "bpy.types.MeshUVLoop.html#bpy.types.MeshUVLoop.uv"
+      ],
+      "reason": "Traverses documented mesh polygon loops and assigns UV coordinates from documented vertex coordinates."
+    },
+    {
+      "lines": [
+        53,
+        119
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.BlendDataObjects.html#bpy.types.BlendDataObjects.new"
+      ],
+      "reason": "Creates mesh-backed objects and a None-data root object."
+    },
+    {
+      "lines": [
+        54,
+        120
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.CollectionObjects.html#bpy.types.CollectionObjects.link"
+      ],
+      "reason": "Links each created object to the scene collection."
+    },
+    {
+      "lines": [
+        152
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects"
+      ],
+      "reason": "Enumerates the scene objects before clearing their selection state."
+    },
+    {
+      "lines": [
+        155
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.parent"
+      ],
+      "reason": "Assigns the documented parent object relation."
+    },
+    {
+      "lines": [
+        153,
+        156,
+        157
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.select_set"
+      ],
+      "reason": "Selects only the mesh parts for selection-limited FBX export."
+    },
+    {
+      "lines": [
+        160
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.wm.html#bpy.ops.wm.save_as_mainfile"
+      ],
+      "reason": "Saves the constructed scene to the requested blend destination."
+    },
+    {
+      "lines": [
+        161,
+        162
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx"
+      ],
+      "reason": "Exports selected mesh parts through the documented FBX export operator and observed runtime options."
+    },
+    {
+      "lines": [
+        164
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices"
+      ],
+      "reason": "Reads mesh vertex collections from each mesh object for the audit."
+    },
+    {
+      "lines": [
+        165
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygons"
+      ],
+      "reason": "Reads mesh polygon collections from each mesh object for the audit."
+    },
+    {
+      "lines": [
+        176
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Records the documented unique material datablock names in the audit."
+    },
+    {
+      "lines": [
+        17,
+        84,
+        88,
+        90,
+        98,
+        99,
+        100,
+        108,
+        114,
+        123,
+        124,
+        125,
+        132,
+        134,
+        137,
+        140,
+        142,
+        149
+      ],
+      "basis": "general_python",
+      "refs": [],
+      "reason": "Argument parsing, numeric coordinate construction, list operations and calls to local helpers whose Blender data operations are separately bound above."
+    }
+  ],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

@@ -1,0 +1,28 @@
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+.idea/
+.vscode/
+*.sln
+*.VC.db
+*.opensdf
+*.sdf
+Artifacts/QA/
+__pycache__/
+# Transient Tripo API download receipts contain expiring signed asset URLs.
+ArtSource/Kraken/Tripo/*-source-download.json
+ArtSource/Kraken/Tripo/**/*.run.log
+# Local service context and credentials.
+.tripo/
+.env
+.env.*
+!.env.example
+# Recoverable editor backups and FBX texture extraction caches.
+*.blend[0-9]*
+*.fbm/
+ArtSource/**/*.log
+# Archived conversion outputs are local junctions into D:/codex; source GLBs,
+# prepared FBXs/Blends and UE assets are versioned instead.
+ArtSource/Kraken/Tripo/tripo-out/*-convert-*/

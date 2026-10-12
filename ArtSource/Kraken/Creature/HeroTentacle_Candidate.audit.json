@@ -1,0 +1,29 @@
+{
+  "length_m": 18.0,
+  "deform_bones": 24,
+  "vertices": 53824,
+  "triangles": 107260,
+  "physical_cups": 96,
+  "uv": "body longitudinal seam, overlapping cup-local UV islands",
+  "actions": [
+    "Idle",
+    "Warning",
+    "Strike",
+    "Recover",
+    "BoatLift",
+    "Submerge"
+  ],
+  "fps": 30,
+  "action_frames": [
+    1,
+    121
+  ],
+  "strike_contact_frame": 73,
+  "weight_sum_max_error": 0.0,
+  "limitations": [
+    "PBR textures and close-up sculpt still pending",
+    "UE deformation/contact/collision and visual gates NOT_VERIFIED",
+    "Actions are individually authored; transition blending still pending"
+  ],
+  "source": "Original procedural geometry and authored animation; no third-party art"
+}

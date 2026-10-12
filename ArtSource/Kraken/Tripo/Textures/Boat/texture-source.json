@@ -1,0 +1,29 @@
+{
+  "BaseColor": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\Boat\\T_HeroBoat_BaseColor.jpg",
+    "dimensions": [
+      8192,
+      8192
+    ],
+    "sha256": "2504f9f6b98010cea46ef717131eeb14088b79ff725a548af771e3f0975c0898",
+    "source_image_index": 0
+  },
+  "ORM": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\Boat\\T_HeroBoat_ORM.jpg",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "sha256": "9ab63e836fe8c36095b786e48938e54242602fcd4c502be776f47621b943cb2c",
+    "source_image_index": 1
+  },
+  "NormalGL": {
+    "path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Textures\\Boat\\T_HeroBoat_NormalGL.png",
+    "dimensions": [
+      4096,
+      4096
+    ],
+    "sha256": "2f5763796d5faf65ee5a7a8e41a6e09952a435017c9173eba4a62c29834b44a3",
+    "source_image_index": 2
+  }
+}

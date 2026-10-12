@@ -1,0 +1,22 @@
+{
+  "asset": "HeroBoat_Kraken_Candidate",
+  "dimensions_m": {
+    "length": 7.0,
+    "beam": 2.4,
+    "hull_plank_thickness": 0.065
+  },
+  "parts": 108,
+  "mesh_vertices": 2040,
+  "mesh_polygons": 1656,
+  "strakes": 14,
+  "ribs": 14,
+  "seats": 3,
+  "iron_pegs": 42,
+  "materials": [
+    "M_Boat_Wood_Hull",
+    "M_Boat_Wood_Trim",
+    "M_Boat_Iron_Fastener"
+  ],
+  "uv_status": "UV0 authored as longitudinal wood-grain coordinates; bespoke texture packing/PBR maps remain pending",
+  "ue_status": "NOT_IMPORTED_NOT_VISUALLY_VERIFIED"
+}

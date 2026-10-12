@@ -1,0 +1,182 @@
+{
+  "kind": "READ_ONLY_TRIPO_TENTACLE_BLEND_VERIFY_NOT_UE_QA",
+  "mesh": {
+    "name": "HeroTentacle_Tripo_Skin",
+    "vertices": 180101,
+    "polygons": 310371,
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -1.8151400089263916,
+        -0.00010550847218837589,
+        -1.764432430267334
+      ],
+      "max": [
+        1.8194135427474976,
+        18.000017166137695,
+        1.2362895011901855
+      ],
+      "dimensions": [
+        3.634553551673889,
+        18.000122674609884,
+        3.0007219314575195
+      ]
+    }
+  },
+  "armature": {
+    "name": "KrakenTentacleRig",
+    "bones": 24,
+    "pose_bones": 24
+  },
+  "actions": [
+    {
+      "name": "Tentacle_BoatLift",
+      "frame_range": [
+        1.0,
+        121.0
+      ]
+    },
+    {
+      "name": "Tentacle_Idle",
+      "frame_range": [
+        1.0,
+        121.0
+      ]
+    },
+    {
+      "name": "Tentacle_Recover",
+      "frame_range": [
+        1.0,
+        121.0
+      ]
+    },
+    {
+      "name": "Tentacle_Strike",
+      "frame_range": [
+        1.0,
+        121.0
+      ]
+    },
+    {
+      "name": "Tentacle_Submerge",
+      "frame_range": [
+        1.0,
+        121.0
+      ]
+    },
+    {
+      "name": "Tentacle_Warning",
+      "frame_range": [
+        1.0,
+        121.0
+      ]
+    }
+  ],
+  "weights": {
+    "vertices": 180101,
+    "unweighted_vertices": 0,
+    "nonfinite_weight_values": 0,
+    "weight_sum_min": 0.9999999701976776,
+    "weight_sum_max": 1.0000000298023224,
+    "outside_normalization_tolerance": 0,
+    "normalization_epsilon": 1e-05
+  },
+  "evaluated_motion": {
+    "Idle": {
+      "action": "Tentacle_Idle",
+      "frame_start": 1,
+      "frame_end": 121,
+      "evaluated_vertex_count": 180101,
+      "nonfinite_vertices": 0,
+      "base_vertex_index": 73202,
+      "tip_vertex_index": 130166,
+      "base_start_m": [
+        -0.2086586356163025,
+        -0.00010550847218837589,
+        -0.7823317050933838
+      ],
+      "base_end_m": [
+        -0.21127696335315704,
+        -0.0024109692312777042,
+        -0.781624972820282
+      ],
+      "tip_start_m": [
+        -1.079066276550293,
+        17.41352653503418,
+        -1.6294045448303223
+      ],
+      "tip_end_m": [
+        0.2715441584587097,
+        17.435871124267578,
+        -1.6589646339416504
+      ],
+      "base_displacement_m": 0.0035595309226516946,
+      "tip_displacement_m": 1.351118697407795
+    },
+    "Warning": {
+      "action": "Tentacle_Warning",
+      "frame_start": 1,
+      "frame_end": 121,
+      "evaluated_vertex_count": 180101,
+      "nonfinite_vertices": 0,
+      "base_vertex_index": 73202,
+      "tip_vertex_index": 130166,
+      "base_start_m": [
+        -0.2086586356163025,
+        -0.00010550847218837589,
+        -0.7823317050933838
+      ],
+      "base_end_m": [
+        -0.21127696335315704,
+        -0.0024109692312777042,
+        -0.781624972820282
+      ],
+      "tip_start_m": [
+        -1.075864553451538,
+        17.73167610168457,
+        1.2994276285171509
+      ],
+      "tip_end_m": [
+        0.5216668844223022,
+        15.328941345214844,
+        8.233908653259277
+      ],
+      "base_displacement_m": 0.0035595309226516946,
+      "tip_displacement_m": 7.510810166278108
+    },
+    "Strike": {
+      "action": "Tentacle_Strike",
+      "frame_start": 1,
+      "frame_end": 121,
+      "evaluated_vertex_count": 180101,
+      "nonfinite_vertices": 0,
+      "base_vertex_index": 73202,
+      "tip_vertex_index": 130166,
+      "base_start_m": [
+        -0.2086586356163025,
+        -0.00010550847218837589,
+        -0.7823317050933838
+      ],
+      "base_end_m": [
+        -0.21127696335315704,
+        -0.0024109692312777042,
+        -0.781624972820282
+      ],
+      "tip_start_m": [
+        -0.8635417222976685,
+        15.298072814941406,
+        8.271513938903809
+      ],
+      "tip_end_m": [
+        0.18987786769866943,
+        14.556245803833008,
+        -7.059282302856445
+      ],
+      "base_displacement_m": 0.0035595309226516946,
+      "tip_displacement_m": 15.384840268327741
+    }
+  },
+  "limitations": [
+    "Structural and numeric Blender verification only; no animation aesthetics or UE import/runtime conclusion."
+  ]
+}

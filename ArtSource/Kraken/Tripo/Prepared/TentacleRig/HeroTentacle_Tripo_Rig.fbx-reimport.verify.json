@@ -1,0 +1,43 @@
+{
+  "kind": "READ_ONLY_TRIPO_TENTACLE_FRESH_FBX_REIMPORT_NOT_UE_QA",
+  "fbx": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\TentacleRig\\HeroTentacle_Tripo_Rig.fbx",
+  "mesh": {
+    "name": "HeroTentacle_Tripo_Skin",
+    "vertices": 180101,
+    "polygons": 310371,
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -1.8151401281356812,
+        -0.00010552671301411465,
+        -1.764432430267334
+      ],
+      "max": [
+        1.819413423538208,
+        18.000017166137695,
+        1.2362895011901855
+      ],
+      "dimensions": [
+        3.634553551673889,
+        18.00012269285071,
+        3.0007219314575195
+      ]
+    }
+  },
+  "armature": {
+    "name": "KrakenTentacleRig",
+    "bones": 24,
+    "pose_bones": 24
+  },
+  "actions": [
+    "KrakenTentacleRig|KrakenTentacleRig|Tentacle_BoatLift",
+    "KrakenTentacleRig|KrakenTentacleRig|Tentacle_Idle",
+    "KrakenTentacleRig|KrakenTentacleRig|Tentacle_Recover",
+    "KrakenTentacleRig|KrakenTentacleRig|Tentacle_Strike",
+    "KrakenTentacleRig|KrakenTentacleRig|Tentacle_Submerge",
+    "KrakenTentacleRig|KrakenTentacleRig|Tentacle_Warning"
+  ],
+  "limitations": [
+    "Fresh Blender FBX reimport only; no UE import/runtime conclusion."
+  ]
+}

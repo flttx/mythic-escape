@@ -1,0 +1,44 @@
+{
+  "source": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\source-boat-v1\\model.glb",
+  "object": "SM_Tripo_HeroBoat_Prepared",
+  "materials": [
+    "tripo_material_5e8b407e-501d-431c-be6f-f025f96c7ed2"
+  ],
+  "original_bounds": {
+    "min": [
+      -0.4900987446308136,
+      -0.22718888521194458,
+      -0.19934920966625214
+    ],
+    "max": [
+      0.490151047706604,
+      0.2285982221364975,
+      0.19940780103206635
+    ],
+    "dimensions": [
+      0.9802497923374176,
+      0.4557871073484421,
+      0.3987570106983185
+    ]
+  },
+  "axis_mapping": {
+    "source_long_to_X": 0,
+    "source_wide_to_Y": 1,
+    "source_vertical_to_Z": 2
+  },
+  "scale_ratio": {
+    "x": 7.1410369629443275,
+    "y": 5.265616252206181,
+    "z": 4.025007603475768
+  },
+  "target_bounds_m": {
+    "length": 7.0,
+    "beam": 2.4,
+    "height": 1.605,
+    "min_z": 0.0
+  },
+  "vertices": 1049617,
+  "polygons": 1978375,
+  "uv_layers": 1,
+  "status": "PREPARED_NOT_UE_VALIDATED"
+}

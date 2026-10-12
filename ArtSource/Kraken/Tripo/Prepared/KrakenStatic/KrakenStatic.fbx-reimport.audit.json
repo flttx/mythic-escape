@@ -1,0 +1,33 @@
+{
+  "mode": "fresh_fbx_reimport",
+  "fbx": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\KrakenStatic\\SM_Kraken_Static_Diagnostic.fbx",
+  "static_only": true,
+  "reimported": {
+    "object_name": "SM_Kraken_Static_Diagnostic",
+    "vertices": 1012266,
+    "polygons": 1945574,
+    "triangles": 1945574,
+    "material_slots": 1,
+    "material_names": [
+      "tripo_material_d6aeded3-d16b-487a-8238-b885ecc4c5b6"
+    ],
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -34.43209457397461,
+        -40.0,
+        0.0
+      ],
+      "max": [
+        34.432098388671875,
+        40.0,
+        71.56608581542969
+      ],
+      "dimensions": [
+        68.86419296264648,
+        80.0,
+        71.56608581542969
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "28e937c6-f763-4bf9-86c7-c4082e170a49",
+  "type": "text_to_image",
+  "status": "success",
+  "input": {
+    "prompt": "Production creature modeling reference: ONE single isolated octopus arm for a photorealistic Kraken. Full arm extended in a STRAIGHT horizontal line from left to right, thick cut attachment base at the left, smoothly tapering to a fine pointed tip at the far right, entire silhouette almost straight, length fifteen times its diameter. Three-quarter underside view showing exactly TWO parallel rows of large fleshy cupped suckers that gradually shrink toward the tip. The cups have thick soft rims and deep smooth concave interiors, not hard shells. Natural dark slate olive dorsal skin and soft desaturated pale gray underside, fine pores, skin folds, small scars and wet soft tissue. Believable marine animal anatomy photographed under neutral studio lighting. Flat neutral gray background. Full arm occupies 90 percent width, remains entirely visible. No coiling, no curling tip, no U shape, no hook, no branching, no extra arms, no head, no teeth, no eyes, no coral, no barnacles, no metal, no text or measurement markings. A clean usable reference for 3D skeletal rigging, not a cinematic action pose.",
+    "quality": "high",
+    "model_version": "chat_image_2"
+  },
+  "output_fields": [
+    "generated_image_url"
+  ],
+  "credits_consumed": 25,
+  "created_at": "2026-10-10T08:38:46.122631Z",
+  "completed_at": "2026-10-10T08:40:26.537965Z",
+  "files": [
+    "generated_image.png",
+    "preview.png"
+  ]
+}

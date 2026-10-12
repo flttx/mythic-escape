@@ -1,0 +1,33 @@
+{
+  "task_id": "d6aeded3-d16b-487a-8238-b885ecc4c5b6",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A complete photorealistic colossal ancient Kraken, biologically credible giant deep-sea cephalopod for a cinematic ocean survival film. Powerful elongated bulbous muscular mantle rising above a broad octopus-like head, two large deeply recessed amber eyes with horizontal pupils, dark olive charcoal and muted slate mottled wet skin, subtle scar tissue, irregular fleshy folds, fine pores and chromatophores. Eight heavy tapered arms spread apart in a relaxed radial pose without crossing, every arm continuous from head to tip, two orderly rows of thick three-dimensional concave suction cups on undersides. Coherent anatomy and massive weight, asymmetric natural wear, no costume or armor. Whole isolated creature fully visible, neutral lighting, extremely detailed physically based surface and organic geometry suitable for close shots. No water, ground, rocks, boats or human figures. Neutral pose, no dramatic curling knots.",
+    "delight": true,
+    "texture": true,
+    "export_uv": true,
+    "model_seed": 101002,
+    "model_version": "v3.1-20260211",
+    "negative_prompt": "cartoon, stylized, low poly, toy, dragon, horns, armor, spikes, humanoid, rock skin, merged arms, disconnected limbs, tentacle knots, scenery, water base, text",
+    "texture_quality": "extreme",
+    "texture_version": "v3.5-20260815",
+    "geometry_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 60,
+  "created_at": "2026-10-10T08:27:52.719594Z",
+  "completed_at": "2026-10-10T08:32:44.838454Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

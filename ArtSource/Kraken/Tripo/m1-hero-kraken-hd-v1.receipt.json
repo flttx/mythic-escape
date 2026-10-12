@@ -1,0 +1,11 @@
+{
+  "name": "m1-hero-kraken-hd-v1",
+  "exit_code": 0,
+  "result_file": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\m1-hero-kraken-hd-v1.result.json",
+  "task_id": "dd3845cc-9749-423a-972d-56f72c367289",
+  "source_task_id": "d6aeded3-d16b-487a-8238-b885ecc4c5b6",
+  "status": "success",
+  "model_file": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\tripo-out\\m1-hero-kraken-hd-v1-convert-dd3845cc\\model.fbx",
+  "preview": null,
+  "credits_consumed": 70
+}

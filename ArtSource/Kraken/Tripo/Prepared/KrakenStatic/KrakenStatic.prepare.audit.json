@@ -1,0 +1,68 @@
+{
+  "mode": "prepare",
+  "source_path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\source-kraken-v1\\model.glb",
+  "static_only": true,
+  "source": {
+    "object_name": "tripo_node_d6aeded3-d16b-487a-8238-b885ecc4c5b6",
+    "vertices": 1012266,
+    "polygons": 1945574,
+    "triangles": 1945574,
+    "material_slots": 1,
+    "material_names": [
+      "tripo_material_d6aeded3-d16b-487a-8238-b885ecc4c5b6"
+    ],
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -0.4212642312049866,
+        -0.48968011140823364,
+        -0.4379633069038391
+      ],
+      "max": [
+        0.42168453335762024,
+        0.48957908153533936,
+        0.4380585253238678
+      ],
+      "dimensions": [
+        0.8429487645626068,
+        0.979259192943573,
+        0.8760218322277069
+      ]
+    }
+  },
+  "uniform_scale_applied": 81.69440795294098,
+  "prepared": {
+    "object_name": "SM_Kraken_Static_Diagnostic",
+    "vertices": 1012266,
+    "polygons": 1945574,
+    "triangles": 1945574,
+    "material_slots": 1,
+    "material_names": [
+      "tripo_material_d6aeded3-d16b-487a-8238-b885ecc4c5b6"
+    ],
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -34.432098388671875,
+        -40.0,
+        0.0
+      ],
+      "max": [
+        34.432098388671875,
+        40.0,
+        71.56608581542969
+      ],
+      "dimensions": [
+        68.86419677734375,
+        80.0,
+        71.56608581542969
+      ]
+    }
+  },
+  "blend": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\KrakenStatic\\SM_Kraken_Static_Diagnostic.blend",
+  "fbx": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\KrakenStatic\\SM_Kraken_Static_Diagnostic.fbx",
+  "texture_export_requested": {
+    "path_mode": "COPY",
+    "embed_textures": true
+  }
+}

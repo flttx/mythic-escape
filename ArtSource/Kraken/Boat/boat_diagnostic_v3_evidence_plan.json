@@ -1,0 +1,257 @@
+{
+  "schema_version": 2,
+  "request": "Inspect a loaded Blender hero boat mesh and write an offline SVG geometry diagnostic",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "api:bpy.types.Context",
+    "api:bpy.types.Scene",
+    "api:bpy.types.Mesh",
+    "api:bpy.types.Object"
+  ],
+  "seed_refs": [
+    "bpy.types.Context.html",
+    "bpy.types.Mesh.html",
+    "bpy.types.Object.html",
+    "bpy.types.Scene.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.scene",
+      "source_text_sha256": "ecdf0133ff489d89640b5736b8fa6cd0c22ebbc713871cbd288d4607dd6cfe79",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Scene.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.objects",
+      "source_text_sha256": "0f5e42a21ead226ecea451548a698b821adc809cbc5276c394a2aa399e216e06",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html",
+        "bpy.types.SceneObjects.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+      "source_text_sha256": "7fe1a3a6f8a6bd8d635b1509cdc5e6176dce71b336852dec06feb61e7179a855",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+      "source_text_sha256": "7d8a388c0329638497ac7c61c2c7bba03d18d3cb6852a64480ea797516a9dd49",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshUVLoopLayer.html",
+        "bpy.types.UVLoopLayers.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.validate",
+      "source_text_sha256": "d4908f3ebaf2400cc622fd0dc71e784ed6d10ff638eaf81d282aeff5c0598481",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    }
+  ],
+  "script_sha256": "f0eabce19133670abd9e632027260df4025fe197a25860c941c15e0a15d694b6",
+  "bindings": [
+    {
+      "lines": [
+        15
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.Object.html#bpy.types.Object.type"
+      ],
+      "reason": "Enumerates mesh objects in the loaded scene."
+    },
+    {
+      "lines": [
+        16,
+        28,
+        45
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co"
+      ],
+      "reason": "Reads mesh vertices and their documented coordinates."
+    },
+    {
+      "lines": [
+        22
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.validate"
+      ],
+      "reason": "Runs the documented mesh validation operation on reopened mesh data."
+    },
+    {
+      "lines": [
+        23
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data"
+      ],
+      "reason": "Records the name of a mesh whose validation reports a correction."
+    },
+    {
+      "lines": [
+        29
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygons"
+      ],
+      "reason": "Counts reopened mesh polygons."
+    },
+    {
+      "lines": [
+        30
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers"
+      ],
+      "reason": "Checks the documented UV layer collection for every mesh."
+    },
+    {
+      "lines": [
+        46
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co"
+      ],
+      "reason": "Projects documented vertex coordinates for the SVG diagnostic."
+    },
+    {
+      "lines": [
+        10,
+        25,
+        26,
+        27,
+        47,
+        48,
+        50,
+        51,
+        59
+      ],
+      "basis": "general_python",
+      "refs": [],
+      "reason": "Argument parsing, scalar aggregation, string assembly, projections and file output are ordinary Python operations."
+    }
+  ],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

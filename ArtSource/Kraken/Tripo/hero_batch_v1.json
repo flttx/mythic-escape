@@ -1,0 +1,36 @@
+{
+  "purpose": "M1 high fidelity source assets; visual acceptance pending Blender and real UE review",
+  "authorization": "2026-10-10 user explicitly authorized unrestricted Tripo API credits, prioritize high precision",
+  "cli_version": "0.5.2",
+  "parameters": {
+    "geometry_quality": "detailed",
+    "texture_quality": "extreme",
+    "texture_version": "v3.5-20260815",
+    "texture": true,
+    "pbr": true,
+    "delight": true
+  },
+  "jobs": [
+    {
+      "name": "m1-hero-boat-hd-v1",
+      "seed": 101001,
+      "prompt": "A photorealistic seaworthy 7 meter wooden open rowing boat for a cinematic North Atlantic storm survival game. Complete intact clinker-built oak hull, elegant deep curved bilges, pointed raised bow, narrow squared stern, thick gunwales, visible overlapping curved planks, exposed inner ribs, three simple thwart benches and bottom floorboards with drainage gaps. Large unobstructed open interior for a seated first-person player. Authentic boatbuilding joinery, wrought iron rivets and oarlocks, aged tarred seams, damp dark oak grain, restrained salt weathering and fine chipped edges. Hull must be watertight below gunwales and structurally plausible. Full boat isolated, underside and interior modeled, physically based material detail, high resolution close-up production asset. No people, no water, no ground, no mast, no sail, no canopy, no mounted weapons, no loose oars, no lettering.",
+      "negative_prompt": "cartoon, stylized, low poly, toy, miniature, flat hull, solid filled interior, oversized ornaments, sails, human, ocean, scenery, display stand, text",
+      "target_length_m": 7.0
+    },
+    {
+      "name": "m1-hero-kraken-hd-v1",
+      "seed": 101002,
+      "prompt": "A complete photorealistic colossal ancient Kraken, biologically credible giant deep-sea cephalopod for a cinematic ocean survival film. Powerful elongated bulbous muscular mantle rising above a broad octopus-like head, two large deeply recessed amber eyes with horizontal pupils, dark olive charcoal and muted slate mottled wet skin, subtle scar tissue, irregular fleshy folds, fine pores and chromatophores. Eight heavy tapered arms spread apart in a relaxed radial pose without crossing, every arm continuous from head to tip, two orderly rows of thick three-dimensional concave suction cups on undersides. Coherent anatomy and massive weight, asymmetric natural wear, no costume or armor. Whole isolated creature fully visible, neutral lighting, extremely detailed physically based surface and organic geometry suitable for close shots. No water, ground, rocks, boats or human figures. Neutral pose, no dramatic curling knots.",
+      "negative_prompt": "cartoon, stylized, low poly, toy, dragon, horns, armor, spikes, humanoid, rock skin, merged arms, disconnected limbs, tentacle knots, scenery, water base, text",
+      "target_length_m": null
+    },
+    {
+      "name": "m1-hero-tentacle-hd-v1",
+      "seed": 101003,
+      "prompt": "One isolated photorealistic giant Kraken arm, a single continuous muscular octopus tentacle from a thick rounded attachment base to a fine tapered tip. Entire arm almost straight horizontally with only a very shallow natural curve, no coiling and no branches, length about twelve times the base diameter. Two parallel orderly rows of individually modeled concave suction cups along the underside, large near the base and progressively smaller toward the tip, each with a thick fleshy lip and a deep bowl. Dark olive charcoal mottled dorsal skin, desaturated warm gray cup interiors, natural soft tissue folds and subtle scar tissue, fine pores and wet physically based skin detail. Anatomically believable high-resolution cinematic creature asset, geometry on all sides and closed proximal end for skeletal rigging. Entire arm visible in isolation, no head, body, eyes, teeth, rocks, water, ground or props.",
+      "negative_prompt": "cartoon, low poly, rigid tube, spiral, tight coil, knot, multiple arms, branches, spikes, teeth, eyeballs, head, humanoid, merged suction cups, flat painted cups, water, scenery, stand",
+      "target_length_m": 18.0
+    }
+  ]
+}

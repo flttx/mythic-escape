@@ -1,0 +1,13 @@
+{
+  "kind": "OFFLINE_ASSET_GEOMETRY_DIAGNOSTIC_NOT_UE_VISUAL_QA",
+  "parts": 108,
+  "vertices": 2040,
+  "polygons": 1656,
+  "bounds_m": {
+    "length": 7.0,
+    "beam": 2.4000000953674316,
+    "height": 1.6050000144168735
+  },
+  "invalid_meshes_corrected_on_reopen": [],
+  "meshes_missing_uv": []
+}

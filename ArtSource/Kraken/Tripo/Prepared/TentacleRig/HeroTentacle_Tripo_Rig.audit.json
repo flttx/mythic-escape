@@ -1,0 +1,25 @@
+{
+  "source": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\tripo-out\\m1-hero-tentacle-hd-v2-5e458213\\model.glb",
+  "source_triangles": 1939826,
+  "deformation_triangles": 310371,
+  "vertices": 180101,
+  "bones": 24,
+  "length_m": 18.0,
+  "base_was_positive_y": false,
+  "actions": [
+    "Idle",
+    "Warning",
+    "Strike",
+    "Recover",
+    "BoatLift",
+    "Submerge"
+  ],
+  "fps": 30,
+  "uv_layers": 1,
+  "status": "RIGGED_REQUIRES_INDEPENDENT_REOPEN_AND_UE_MOTION_QA",
+  "limitations": [
+    "Contact frame 73 is authored intent, not a wired collision event",
+    "Animation transitions and cup deformation need visual review",
+    "No full chapter or performance acceptance implied"
+  ]
+}

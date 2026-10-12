@@ -1,0 +1,396 @@
+{
+  "schema_version": 2,
+  "request": "Read-only audit of GLB and exported FBX mesh corner normals against sampled triangle geometry; report custom-normal property availability without modifying assets",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "gltf-file-exchange",
+    "fbx-file-exchange",
+    "api:bpy.ops.import_scene",
+    "api:bpy.types.Context",
+    "api:bpy.types.Scene",
+    "api:bpy.types.Mesh",
+    "api:bpy.types.Object"
+  ],
+  "seed_refs": [
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.gltf",
+    "bpy.ops.import_scene.html",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.gltf",
+    "bpy.types.Context.html",
+    "bpy.types.Mesh.html",
+    "bpy.types.Object.html",
+    "bpy.types.Scene.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.corner_normals",
+      "source_text_sha256": "14a6905bfce9a14eedfa3b08e05ed5d3b0f63793d062129cb962be827d618599",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshNormalValue.html",
+        "bpy.types.bpy_prop_collection.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.loops",
+      "source_text_sha256": "d1f9fdd0f8a0dec733f62ea42d97c63211aea5b0e5505c0c438ed6704f7bea88",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshLoop.html",
+        "bpy.types.MeshLoops.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshLoop.html#bpy.types.MeshLoop.vertex_index",
+      "source_text_sha256": "f9893a3eb192e217181e19fe1aa68d80ee4b4cd57380e711fb3923c470b80c2d",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.gltf",
+      "source_text_sha256": "8c444cba645f89196e96ed9c3b2328f975429c7e2f09f5a6cc0a2a98ae7242b7",
+      "ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "total_lines": 100,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+      "source_text_sha256": "a73d312d3fe22a7f02b589dc2133c53f5dc9cf5c6fe143dd68b4a598d177589f",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "total_lines": 126,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshNormalValue.html#bpy.types.MeshNormalValue.vector",
+      "source_text_sha256": "7fb587538341aaa89900cf2c5e2bc2e9153af420255ed29ad897dd61daccb35f",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+      "source_text_sha256": "7fe1a3a6f8a6bd8d635b1509cdc5e6176dce71b336852dec06feb61e7179a855",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.has_custom_normals",
+      "source_text_sha256": "de52e21df1f38d2d2a149cb14ecfa838f20aa174cf61099b01fa89f442185e7c",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygon_normals",
+      "source_text_sha256": "d3ae15c5058375c22f79e7a7ebe2b1ac1fd784a87edf881f532f1c47101e53cb",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshNormalValue.html",
+        "bpy.types.bpy_prop_collection.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshPolygon.html",
+      "source_text_sha256": "ce548782accd01231f2d9dae70b77de33d9b1c1ed1c82d9e0e01d8c78816bef5",
+      "ranges": [
+        [
+          1,
+          244
+        ]
+      ],
+      "total_lines": 244,
+      "links": [
+        "bpy.types.Mesh.html",
+        "bpy.types.Struct.html",
+        "bpy.types.bpy_prop_array.html",
+        "bpy.types.bpy_struct.html",
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.scene",
+      "source_text_sha256": "ecdf0133ff489d89640b5736b8fa6cd0c22ebbc713871cbd288d4607dd6cfe79",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Scene.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.objects",
+      "source_text_sha256": "0f5e42a21ead226ecea451548a698b821adc809cbc5276c394a2aa399e216e06",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html",
+        "bpy.types.SceneObjects.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ID.html#bpy.types.ID.name",
+      "source_text_sha256": "79cd8ed46a6f9f1c3ac1ebbd8c1b16e9507949cc16b22a376c7fc64e9cc66ee8",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    }
+  ],
+  "script_sha256": "6e17e7221d0e3aa3b076281268c4b92d731b8ea7fdc3e4eb57a70f45c2fe8d2d",
+  "bindings": [
+    {
+      "lines": [
+        7
+      ],
+      "basis": "general_python",
+      "refs": [],
+      "reason": "Argument parsing."
+    },
+    {
+      "lines": [
+        11
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.Object.html#bpy.types.Object.type",
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Identifies newly imported mesh objects."
+    },
+    {
+      "lines": [
+        14,
+        15,
+        20,
+        21,
+        23,
+        24,
+        26,
+        28,
+        34,
+        35,
+        37,
+        38,
+        39,
+        52,
+        53,
+        54,
+        55,
+        57,
+        61,
+        64,
+        66
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygon_normals",
+        "bpy.types.Mesh.html#bpy.types.Mesh.corner_normals",
+        "bpy.types.MeshNormalValue.html#bpy.types.MeshNormalValue.vector",
+        "bpy.types.Mesh.html#bpy.types.Mesh.has_custom_normals",
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Reads mesh geometry and custom/corner normals, including expected inverse-transpose normal comparison."
+    },
+    {
+      "lines": [
+        77
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Records baseline before GLB import."
+    },
+    {
+      "lines": [
+        78
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.import_scene.html#bpy.ops.import_scene.gltf"
+      ],
+      "reason": "Imports source GLB."
+    },
+    {
+      "lines": [
+        82
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.ID.html#bpy.types.ID.name"
+      ],
+      "reason": "Records baseline before FBX import."
+    },
+    {
+      "lines": [
+        83
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx"
+      ],
+      "reason": "Imports prepared FBX."
+    }
+  ],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "50121328-6d5e-434d-927b-be7f72661e13",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One isolated photorealistic giant Kraken arm, a single continuous muscular octopus tentacle from a thick rounded attachment base to a fine tapered tip. Entire arm almost straight horizontally with only a very shallow natural curve, no coiling and no branches, length about twelve times the base diameter. Two parallel orderly rows of individually modeled concave suction cups along the underside, large near the base and progressively smaller toward the tip, each with a thick fleshy lip and a deep bowl. Dark olive charcoal mottled dorsal skin, desaturated warm gray cup interiors, natural soft tissue folds and subtle scar tissue, fine pores and wet physically based skin detail. Anatomically believable high-resolution cinematic creature asset, geometry on all sides and closed proximal end for skeletal rigging. Entire arm visible in isolation, no head, body, eyes, teeth, rocks, water, ground or props.",
+    "delight": true,
+    "texture": true,
+    "export_uv": true,
+    "model_seed": 101003,
+    "model_version": "v3.1-20260211",
+    "negative_prompt": "cartoon, low poly, rigid tube, spiral, tight coil, knot, multiple arms, branches, spikes, teeth, eyeballs, head, humanoid, merged suction cups, flat painted cups, water, scenery, stand",
+    "texture_quality": "extreme",
+    "texture_version": "v3.5-20260815",
+    "geometry_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 60,
+  "created_at": "2026-10-10T08:27:52.700616Z",
+  "completed_at": "2026-10-10T08:32:07.641163Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

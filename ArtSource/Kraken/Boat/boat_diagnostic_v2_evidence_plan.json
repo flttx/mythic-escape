@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "request": "Reopen generated hero boat blend, inspect mesh vertices polygons UV layers and create an offline SVG geometry diagnostic",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "scene-object-assembly",
+    "mesh-from-explicit-data",
+    "api:bpy.types.Mesh",
+    "api:bpy.types.Object"
+  ],
+  "seed_refs": [
+    "bpy.types.BlendDataObjects.html#bpy.types.BlendDataObjects.new",
+    "bpy.types.CollectionObjects.html#bpy.types.CollectionObjects.link",
+    "bpy.types.Mesh.html",
+    "bpy.types.Mesh.html#bpy.types.Mesh.from_pydata",
+    "bpy.types.Mesh.html#bpy.types.Mesh.validate",
+    "bpy.types.Object.html",
+    "bpy.types.Scene.html",
+    "info_gotchas_meshes.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.types.BlendDataObjects.html#bpy.types.BlendDataObjects.new",
+      "source_text_sha256": "f42fca05c40e4b311792c7102b154469c07089f1ed060a6b25f06cbfdc2f65cf",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy.types.ID.html",
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.CollectionObjects.html#bpy.types.CollectionObjects.link",
+      "source_text_sha256": "58ad492896561dd14f0d06aa1f0575ee7391668889e6a9e051de69d6c6c6adb7",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.from_pydata",
+      "source_text_sha256": "7e60c19f0afdd6577841b0cb7eb236eccfe466bebaedbc2fc12b506b649f635a",
+      "ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "total_lines": 26,
+      "links": [
+        "bpy.types.Mesh.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.validate",
+      "source_text_sha256": "d4908f3ebaf2400cc622fd0dc71e784ed6d10ff638eaf81d282aeff5c0598481",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+      "source_text_sha256": "7fe1a3a6f8a6bd8d635b1509cdc5e6176dce71b336852dec06feb61e7179a855",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+      "source_text_sha256": "7d8a388c0329638497ac7c61c2c7bba03d18d3cb6852a64480ea797516a9dd49",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshUVLoopLayer.html",
+        "bpy.types.UVLoopLayers.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.objects",
+      "source_text_sha256": "0f5e42a21ead226ecea451548a698b821adc809cbc5276c394a2aa399e216e06",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html",
+        "bpy.types.SceneObjects.html"
+      ],
+      "complete": true
+    }
+  ],
+  "script_sha256": null,
+  "bindings": [],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

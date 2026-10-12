@@ -1,0 +1,51 @@
+{
+  "kind": "READ_ONLY_BLENDER_TENTACLE_VERIFY_NOT_UE_QA",
+  "vertices": 53824,
+  "uv_layers": 1,
+  "deform_bones": 24,
+  "actions": [
+    "Tentacle_BoatLift",
+    "Tentacle_Idle",
+    "Tentacle_Recover",
+    "Tentacle_Strike",
+    "Tentacle_Submerge",
+    "Tentacle_Warning"
+  ],
+  "weight_sum_min": 0.9999999701976776,
+  "weight_sum_max": 1.0000000298023224,
+  "nonfinite_weights": 0,
+  "samples": {
+    "Tentacle_Idle_1": {
+      "tip": [
+        -1.120910882949829,
+        17.79651641845703,
+        -0.46686410903930664
+      ],
+      "nonfinite_vertices": 0
+    },
+    "Tentacle_Warning_61": {
+      "tip": [
+        -0.5948128700256348,
+        16.627845764160156,
+        5.987102508544922
+      ],
+      "nonfinite_vertices": 0
+    },
+    "Tentacle_Strike_73": {
+      "tip": [
+        -0.5452877283096313,
+        15.594718933105469,
+        -6.392319679260254
+      ],
+      "nonfinite_vertices": 0
+    },
+    "Tentacle_Strike_121": {
+      "tip": [
+        0.23119008541107178,
+        15.591669082641602,
+        -6.40556526184082
+      ],
+      "nonfinite_vertices": 0
+    }
+  }
+}

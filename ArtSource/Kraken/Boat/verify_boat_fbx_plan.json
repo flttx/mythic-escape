@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "request": "Fresh import the generated boat FBX and audit object list and mesh bounds",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "fbx-file-exchange",
+    "api:bpy.types.Context",
+    "api:bpy.types.Scene",
+    "api:bpy.types.Mesh",
+    "api:bpy.types.Object"
+  ],
+  "seed_refs": [
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+    "bpy.types.Context.html",
+    "bpy.types.Mesh.html",
+    "bpy.types.Object.html",
+    "bpy.types.Scene.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+      "source_text_sha256": "a73d312d3fe22a7f02b589dc2133c53f5dc9cf5c6fe143dd68b4a598d177589f",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "total_lines": 126,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.scene",
+      "source_text_sha256": "ecdf0133ff489d89640b5736b8fa6cd0c22ebbc713871cbd288d4607dd6cfe79",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Scene.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.objects",
+      "source_text_sha256": "0f5e42a21ead226ecea451548a698b821adc809cbc5276c394a2aa399e216e06",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Object.html",
+        "bpy.types.SceneObjects.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    }
+  ],
+  "script_sha256": "2bbd9a63be0f87555149537b6302f22f9afddd7c6a88f83ec8eebfb615e30ecc",
+  "bindings": [
+    {
+      "lines": [
+        9
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx"
+      ],
+      "reason": "Imports the requested FBX in a fresh Blender process."
+    },
+    {
+      "lines": [
+        8,
+        10,
+        11,
+        16,
+        17
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Context.html#bpy.types.Context.scene",
+        "bpy.types.Scene.html#bpy.types.Scene.objects",
+        "bpy.types.Object.html#bpy.types.Object.type"
+      ],
+      "reason": "Audits the fresh-scene object list and types."
+    },
+    {
+      "lines": [
+        12,
+        21
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co"
+      ],
+      "reason": "Reads imported mesh coordinates and vertex totals."
+    },
+    {
+      "lines": [
+        6,
+        7,
+        18,
+        19,
+        20
+      ],
+      "basis": "general_python",
+      "refs": [],
+      "reason": "Argument parsing and scalar bounds aggregation are ordinary Python."
+    }
+  ],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

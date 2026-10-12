@@ -1,0 +1,215 @@
+{
+  "schema": "mythic-glb-audit/1",
+  "scope": "offline structural metadata only; not an artistic, rigging, UE import, or runtime quality verdict",
+  "input": "ArtSource\\Kraken\\Tripo\\source-boat-v1\\model.glb",
+  "file": {
+    "byte_length": 80734232,
+    "sha256": "90bf86e31e9307b4d380e2e51ea7c2cd45370ecf44153644c021e40fd9c72138"
+  },
+  "glb": {
+    "version": 2,
+    "chunks": [
+      {
+        "type": "JSON",
+        "byte_length": 2136
+      },
+      {
+        "type": "BIN",
+        "byte_length": 80732068
+      }
+    ]
+  },
+  "asset": {
+    "version": "2.0",
+    "generator": "https://tripo3d.ai"
+  },
+  "geometry": {
+    "mesh_count": 1,
+    "primitive_count": 1,
+    "vertex_count_sum_per_primitive": 1049617,
+    "triangle_count_sum": 1978375,
+    "meshes": [
+      {
+        "index": 0,
+        "name": "tripo_mesh_5e8b407e-501d-431c-be6f-f025f96c7ed2",
+        "primitive_count": 1,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "vertex_count": 1049617,
+            "triangle_count": 1978375,
+            "triangle_note": null,
+            "attributes": {
+              "POSITION": 1,
+              "NORMAL": 3,
+              "TEXCOORD_0": 2
+            },
+            "indices_accessor": 0,
+            "material": 0
+          }
+        ]
+      }
+    ],
+    "accessor_count": 4,
+    "accessors": [
+      {
+        "bufferView": 0,
+        "componentType": 5125,
+        "count": 5935125,
+        "type": "SCALAR",
+        "min": [
+          0.0
+        ],
+        "max": [
+          1049616.0
+        ]
+      },
+      {
+        "bufferView": 1,
+        "byteOffset": 0,
+        "componentType": 5126,
+        "count": 1049617,
+        "type": "VEC3",
+        "min": [
+          -0.4900987446308136,
+          -0.19934920966625214,
+          -0.2285982221364975
+        ],
+        "max": [
+          0.490151047706604,
+          0.19940780103206635,
+          0.22718888521194458
+        ]
+      },
+      {
+        "bufferView": 2,
+        "byteOffset": 0,
+        "componentType": 5126,
+        "count": 1049617,
+        "type": "VEC2",
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "bufferView": 3,
+        "byteOffset": 0,
+        "componentType": 5126,
+        "count": 1049617,
+        "type": "VEC3",
+        "min": [
+          -1.0,
+          -0.9999995827674866,
+          -1.0
+        ],
+        "max": [
+          0.9999999403953552,
+          0.9999999403953552,
+          0.9999999403953552
+        ]
+      }
+    ]
+  },
+  "transformed_bounds": {
+    "computed": true,
+    "min": [
+      -0.4900987446308136,
+      -0.19934920966625214,
+      -0.2285982221364975
+    ],
+    "max": [
+      0.490151047706604,
+      0.19940780103206635,
+      0.22718888521194458
+    ],
+    "dimensions": [
+      0.9802497923374176,
+      0.3987570106983185,
+      0.4557871073484421
+    ],
+    "limitations": []
+  },
+  "images": [
+    {
+      "index": 0,
+      "name": "Color_5e8b407e-501d-431c-be6f-f025f96c7ed2",
+      "kind": "embedded",
+      "declared_mime_type": "image/jpeg",
+      "detected_mime_type": "image/jpeg",
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "read_status": "read"
+    },
+    {
+      "index": 1,
+      "name": "ORM_5e8b407e-501d-431c-be6f-f025f96c7ed2",
+      "kind": "embedded",
+      "declared_mime_type": "image/jpeg",
+      "detected_mime_type": "image/jpeg",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "read_status": "read"
+    },
+    {
+      "index": 2,
+      "name": "NormalGL_5e8b407e-501d-431c-be6f-f025f96c7ed2",
+      "kind": "embedded",
+      "declared_mime_type": "image/png",
+      "detected_mime_type": "image/png",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "read_status": "read"
+    }
+  ],
+  "materials": {
+    "material_count": 1,
+    "materials": [
+      {
+        "index": 0,
+        "name": "tripo_material_5e8b407e-501d-431c-be6f-f025f96c7ed2",
+        "base_color_factor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallic_factor": 1.0,
+        "roughness_factor": 1.0,
+        "texture_image_indices": {
+          "baseColor": 0,
+          "normal": 2,
+          "metallicRoughness": 1
+        }
+      }
+    ],
+    "texture_image_reference_counts": {
+      "baseColor": {
+        "0": 1
+      },
+      "normal": {
+        "2": 1
+      },
+      "metallicRoughness": {
+        "1": 1
+      }
+    }
+  },
+  "skins": {
+    "count": 0
+  },
+  "animations": {
+    "count": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "mode": "fresh_fbx_reimport",
+  "fbx": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\KrakenColossal\\SM_Kraken_Colossal_V5.fbx",
+  "static_only": true,
+  "imported_objects": [
+    {
+      "name": "SM_Kraken_Colossal_Diagnostic",
+      "type": "MESH"
+    }
+  ],
+  "reimported": {
+    "object_name": "SM_Kraken_Colossal_Diagnostic",
+    "vertices": 976414,
+    "polygons": 1911124,
+    "triangles": 1911124,
+    "material_slots": 1,
+    "material_names": [
+      "tripo_material_137eba30-533d-469f-9fd6-aebe46391af6"
+    ],
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -379.9755859375,
+        -500.0,
+        0.0
+      ],
+      "max": [
+        379.9756164550781,
+        500.0000305175781,
+        548.867919921875
+      ],
+      "dimensions": [
+        759.9512023925781,
+        1000.0000305175781,
+        548.867919921875
+      ]
+    }
+  }
+}

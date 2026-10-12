@@ -1,0 +1,63 @@
+{
+  "method": "Read-only sampled comparison of each corner normal to its polygon winding/position normal; smooth shading may lower dot products, while negative dots evidence opposing orientation.",
+  "source_glb": {
+    "label": "source_glb",
+    "object": "tripo_node_5e8b407e-501d-431c-be6f-f025f96c7ed2",
+    "vertices": 1049617,
+    "polygons": 1978375,
+    "triangles": 1978375,
+    "has_custom_normals": true,
+    "corner_normal_count": 5935125,
+    "sampled_polygons": 4096,
+    "sampled_corners": 12288,
+    "corner_vs_winding_normal_dot": {
+      "min": -0.4866094718516036,
+      "max": 0.99999999994354,
+      "mean": 0.9924279595035794,
+      "negative_count": 1,
+      "nonfinite_count": 0
+    },
+    "corner_normal_length": {
+      "min": 0.9999998336743077,
+      "max": 1.000000171728642
+    }
+  },
+  "prepared_fbx": {
+    "label": "prepared_fbx",
+    "object": "SM_Tripo_HeroBoat_Prepared",
+    "vertices": 1049617,
+    "polygons": 1978375,
+    "triangles": 1978375,
+    "has_custom_normals": true,
+    "corner_normal_count": 5935125,
+    "sampled_polygons": 4096,
+    "sampled_corners": 12288,
+    "corner_vs_winding_normal_dot": {
+      "min": -0.5033646604576036,
+      "max": 0.9999999993046537,
+      "mean": 0.9919386694779208,
+      "negative_count": 1,
+      "nonfinite_count": 0
+    },
+    "corner_normal_length": {
+      "min": 0.9999997246684836,
+      "max": 1.0000001752097947
+    }
+  },
+  "nonuniform_scale_normal_check": {
+    "source_position_scale": [
+      7.1410369629443275,
+      5.265616252206181,
+      4.025007603475768
+    ],
+    "sampled_corners": 12288,
+    "expected_inverse_transpose_vs_prepared_corner_dot": {
+      "min": 0.8839827980590798,
+      "max": 0.9999999999972933,
+      "mean": 0.9997072627531595,
+      "below_0_999": 555,
+      "below_0_99": 56
+    }
+  },
+  "status": "NORMALS_AUDIT_ONLY_NOT_UE_VALIDATED"
+}

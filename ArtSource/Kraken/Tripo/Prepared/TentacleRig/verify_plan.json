@@ -1,0 +1,650 @@
+{
+  "schema_version": 2,
+  "request": "Independently verify an existing tentacle rig Blend and freshly reimported FBX: report bones, actions, vertex weights, evaluated mesh deformation, dimensions and UV without modifying source assets.",
+  "catalog_sha256": "53e68a65c0b4cd4d4dddacdf396ed83cd84a752da3340ca522fd8cacfc34fb09",
+  "selected_features": [
+    "scene-evaluated-geometry",
+    "fbx-file-exchange",
+    "actions-nla-composition",
+    "armature-bone-hierarchy",
+    "api:bpy.ops.object",
+    "api:bpy.types.BlendData",
+    "api:bpy.types.Mesh",
+    "api:bpy.types.Object"
+  ],
+  "seed_refs": [
+    "bpy.ops.export_scene.html#bpy.ops.export_scene.fbx",
+    "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+    "bpy.ops.object.html",
+    "bpy.types.Action.html",
+    "bpy.types.Action.html#bpy.types.Action.layers",
+    "bpy.types.Action.html#bpy.types.Action.slots",
+    "bpy.types.Armature.html",
+    "bpy.types.ArmatureEditBones.html",
+    "bpy.types.ArmatureEditBones.html#bpy.types.ArmatureEditBones.new",
+    "bpy.types.BlendData.html",
+    "bpy.types.Context.html#bpy.types.Context.evaluated_depsgraph_get",
+    "bpy.types.Depsgraph.html",
+    "bpy.types.Depsgraph.html#bpy.types.Depsgraph.object_instances",
+    "bpy.types.EditBone.html",
+    "bpy.types.ID.html#bpy.types.ID.evaluated_get",
+    "bpy.types.Mesh.html",
+    "bpy.types.NlaStrip.html",
+    "bpy.types.NlaStrips.html",
+    "bpy.types.Object.html",
+    "bpy.types.Object.html#bpy.types.Object.to_mesh",
+    "info_gotchas_armatures_and_bones.html"
+  ],
+  "reads": [
+    {
+      "ref": "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx",
+      "source_text_sha256": "a73d312d3fe22a7f02b589dc2133c53f5dc9cf5c6fe143dd68b4a598d177589f",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "total_lines": 126,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.object.html#bpy.ops.object.select_all",
+      "source_text_sha256": "a21a3dae5e8e78f77fff979597624e8edb986e55541a17f7e9616d32c8411444",
+      "ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "total_lines": 30,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.ops.object.html#bpy.ops.object.delete",
+      "source_text_sha256": "65dc3c4bd09e4d2495daafb98973a3fbdbc19a55d216d110f08dbc87ab8a9cba",
+      "ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "total_lines": 20,
+      "links": [
+        "bpy_types_enum_items/operator_return_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Context.html#bpy.types.Context.evaluated_depsgraph_get",
+      "source_text_sha256": "959bc47e204367687d6ad3279cbdf726478b924dfb6d36df5c7891506c6b9873",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "total_lines": 12,
+      "links": [
+        "bpy.types.Depsgraph.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ID.html#bpy.types.ID.evaluated_get",
+      "source_text_sha256": "8b08fb14ddb54c2731d042fb9724b7a71143897a1016d6d382546177b917f6b5",
+      "ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "total_lines": 16,
+      "links": [
+        "bpy.types.Depsgraph.html",
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Depsgraph.html",
+      "source_text_sha256": "566d57dee2501739bb1e0e01d02ce70dc2d555f83f34cf780f7c8ea02b5dd2ad",
+      "ranges": [
+        [
+          1,
+          762
+        ]
+      ],
+      "total_lines": 762,
+      "links": [
+        "bpy.types.BlendDataMeshes.html",
+        "bpy.types.Context.html",
+        "bpy.types.DepsgraphObjectInstance.html",
+        "bpy.types.DepsgraphUpdate.html",
+        "bpy.types.ID.html",
+        "bpy.types.Object.html",
+        "bpy.types.RenderEngine.html",
+        "bpy.types.Scene.html",
+        "bpy.types.Struct.html",
+        "bpy.types.ViewLayer.html",
+        "bpy.types.bpy_prop_collection.html",
+        "bpy.types.bpy_struct.html",
+        "bpy_types_enum_items/id_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Action.html",
+      "source_text_sha256": "ec424c0adebb9067bdd58354ad6afc744ad05ed7c55b0cf6f1048b366211a2dc",
+      "ranges": [
+        [
+          1,
+          445
+        ]
+      ],
+      "total_lines": 445,
+      "links": [
+        "bpy.types.ActionConstraint.html",
+        "bpy.types.ActionLayer.html",
+        "bpy.types.ActionLayers.html",
+        "bpy.types.ActionPoseMarkers.html",
+        "bpy.types.ActionSlot.html",
+        "bpy.types.ActionSlots.html",
+        "bpy.types.AnimData.html",
+        "bpy.types.BlendData.html",
+        "bpy.types.BlendDataActions.html",
+        "bpy.types.FCurve.html",
+        "bpy.types.ID.html",
+        "bpy.types.NlaStrip.html",
+        "bpy.types.NlaStrips.html",
+        "bpy.types.Object.html",
+        "bpy.types.Pose.html",
+        "bpy.types.Struct.html",
+        "bpy.types.TimelineMarker.html",
+        "bpy.types.WindowManager.html",
+        "bpy.types.bpy_struct.html",
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Action.html#bpy.types.Action.frame_range",
+      "source_text_sha256": "65beb62f6896ac96e6c51cb118c383ffa7d4d2ec798e29d45d9e63725a0a0b21",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.AnimData.html#bpy.types.AnimData.action",
+      "source_text_sha256": "97474fb2668776dfebc3046aed4cc98f3275f7a34e8edeee208822943c4b1382",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Action.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.objects",
+      "source_text_sha256": "1f693de52c16552fbc87df76b3c07e3dc319ddd7821a2b21b922c72f989bf786",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.BlendDataObjects.html",
+        "bpy.types.Object.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.BlendData.html#bpy.types.BlendData.actions",
+      "source_text_sha256": "a0acc9c9049f0f41428f4aa4e22b085948b2d90db0f729536c3e3a660cc11f70",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Action.html",
+        "bpy.types.BlendDataActions.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.type",
+      "source_text_sha256": "be8a23ba4d6eff5f7cdaf7111b0c577809784120eda152f4870793f349dcdecc",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy_types_enum_items/object_type_items.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.data",
+      "source_text_sha256": "bdf4354d636c169a35e85f889e253b4356992755f40df2ce549cfdab2ff34132",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ID.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.pose",
+      "source_text_sha256": "e3f71eeaab04b11f13be90c21501f24df11e5f5679740cfa3a8288a371e7349b",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.Pose.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Object.html#bpy.types.Object.matrix_world",
+      "source_text_sha256": "bf2a87a1fbb641d186db1d37e600caae2fa9c76402f088181665a0abe691c143",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Pose.html#bpy.types.Pose.bones",
+      "source_text_sha256": "35e9e1e3666715be603eafa94639e88641312ff48c984477b7b8ea3995f35c5d",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.PoseBone.html",
+        "bpy.types.bpy_prop_collection.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Armature.html#bpy.types.Armature.bones",
+      "source_text_sha256": "1364e92283818fa019ddf2c59c564b55c0a5e6706a88fc54e8522b478d00e88e",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.ArmatureBones.html",
+        "bpy.types.Bone.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+      "source_text_sha256": "c2437667b0e269680b3bccef6dee3f8be9137884986c06000c470871aeb83828",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshVertex.html",
+        "bpy.types.MeshVertices.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+      "source_text_sha256": "7fe1a3a6f8a6bd8d635b1509cdc5e6176dce71b336852dec06feb61e7179a855",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshPolygon.html",
+        "bpy.types.MeshPolygons.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+      "source_text_sha256": "7d8a388c0329638497ac7c61c2c7bba03d18d3cb6852a64480ea797516a9dd49",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.MeshUVLoopLayer.html",
+        "bpy.types.UVLoopLayers.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.groups",
+      "source_text_sha256": "e8cc09cb0add946ed6cd766a14603723769c9955830530e97289deecc9140ff2",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "bpy.types.VertexGroupElement.html",
+        "bpy.types.bpy_prop_collection.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.VertexGroupElement.html#bpy.types.VertexGroupElement.weight",
+      "source_text_sha256": "ddba10713eeabb3286cd6f27a6bb3ac438d9ecc2b91cc721d4e5c0fa8a97730f",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+      "source_text_sha256": "43bc9bb8ae756085dcf2181eba1239b6c767d63be46c75437bf78405a6eafb31",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [
+        "mathutils.html"
+      ],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.Scene.html#bpy.types.Scene.frame_set",
+      "source_text_sha256": "81ed41a339e472d69eb0289a7bc69fe055387e014bf04c5d10fc8d1b8a019f39",
+      "ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "total_lines": 12,
+      "links": [],
+      "complete": true
+    },
+    {
+      "ref": "bpy.types.ID.html#bpy.types.ID.name",
+      "source_text_sha256": "79cd8ed46a6f9f1c3ac1ebbd8c1b16e9507949cc16b22a376c7fc64e9cc66ee8",
+      "ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "total_lines": 8,
+      "links": [],
+      "complete": true
+    }
+  ],
+  "script_sha256": "bb711ff6b88d6f7a0ac3d7b2e41c4b9e8a4e1dc99985fed6c00de7c934fc54cc",
+  "bindings": [
+    {
+      "lines": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        35,
+        40,
+        41,
+        42,
+        43,
+        44,
+        57,
+        58,
+        59,
+        60,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        85,
+        86,
+        90,
+        91,
+        98,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        124,
+        125,
+        126,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        140,
+        141,
+        142,
+        151,
+        153,
+        157,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        171,
+        172,
+        173
+      ],
+      "basis": "general_python",
+      "refs": [],
+      "reason": "Argument parsing, scalar/vector math, finite checks, name matching, JSON serialization and control flow."
+    },
+    {
+      "lines": [
+        24,
+        123,
+        138,
+        160,
+        127,
+        49
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.BlendData.html#bpy.types.BlendData.objects",
+        "bpy.types.BlendData.html#bpy.types.BlendData.actions",
+        "bpy.types.Object.html#bpy.types.Object.type",
+        "bpy.types.ID.html#bpy.types.ID.name",
+        "bpy.types.Action.html#bpy.types.Action.frame_range"
+      ],
+      "reason": "Inspect loaded object/action datablocks and report names/ranges."
+    },
+    {
+      "lines": [
+        39,
+        50,
+        51,
+        52,
+        61,
+        62,
+        83,
+        84,
+        97,
+        99,
+        100,
+        137,
+        154,
+        155,
+        158,
+        159
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Object.html#bpy.types.Object.matrix_world",
+        "bpy.types.Object.html#bpy.types.Object.data",
+        "bpy.types.Mesh.html#bpy.types.Mesh.vertices",
+        "bpy.types.Mesh.html#bpy.types.Mesh.polygons",
+        "bpy.types.Mesh.html#bpy.types.Mesh.uv_layers",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.co",
+        "bpy.types.MeshVertex.html#bpy.types.MeshVertex.groups",
+        "bpy.types.VertexGroupElement.html#bpy.types.VertexGroupElement.weight",
+        "bpy.types.Armature.html#bpy.types.Armature.bones",
+        "bpy.types.Object.html#bpy.types.Object.pose",
+        "bpy.types.Pose.html#bpy.types.Pose.bones"
+      ],
+      "reason": "Read mesh topology, UVs, world positions, vertex-group weights, and armature counts."
+    },
+    {
+      "lines": [
+        80,
+        81,
+        82,
+        92,
+        93,
+        94
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.types.Scene.html#bpy.types.Scene.frame_set",
+        "bpy.types.Context.html#bpy.types.Context.evaluated_depsgraph_get",
+        "bpy.types.ID.html#bpy.types.ID.evaluated_get",
+        "bpy.types.AnimData.html#bpy.types.AnimData.action",
+        "bpy.types.Action.html#bpy.types.Action.frame_range",
+        "bpy.types.Depsgraph.html"
+      ],
+      "reason": "Assign active action, update frames, and inspect evaluated geometry."
+    },
+    {
+      "lines": [
+        146
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.object.html#bpy.ops.object.select_all"
+      ],
+      "reason": "Select isolated factory-startup objects before FBX reimport."
+    },
+    {
+      "lines": [
+        147
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.object.html#bpy.ops.object.delete"
+      ],
+      "reason": "Clear isolated factory-startup objects before FBX reimport."
+    },
+    {
+      "lines": [
+        152
+      ],
+      "basis": "source",
+      "refs": [
+        "bpy.ops.import_scene.html#bpy.ops.import_scene.fbx"
+      ],
+      "reason": "Freshly import FBX with animation enabled."
+    }
+  ],
+  "unresolved": [],
+  "evidence_policy": "Blender facts must come from bundled source or recorded runtime inspection. Pretrained Blender knowledge is not admissible.",
+  "review_note": "Select source refs and read them with docs.py --plan before implementing. Each Blender-specific statement must have a supporting source; source IDs alone do not prove semantic support."
+}

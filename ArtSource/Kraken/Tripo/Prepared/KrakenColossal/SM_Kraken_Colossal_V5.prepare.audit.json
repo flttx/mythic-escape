@@ -1,0 +1,70 @@
+{
+  "mode": "prepare",
+  "source_path": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\KrakenV5\\tripo-out\\m1-kraken-redesign-v5-137eba30\\model.glb",
+  "static_only": true,
+  "source": {
+    "object_name": "tripo_node_137eba30-533d-469f-9fd6-aebe46391af6",
+    "vertices": 976414,
+    "polygons": 1911124,
+    "triangles": 1911124,
+    "material_slots": 1,
+    "material_names": [
+      "tripo_material_137eba30-533d-469f-9fd6-aebe46391af6"
+    ],
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -0.3744677007198334,
+        -0.48999232053756714,
+        -0.26908770203590393
+      ],
+      "max": [
+        0.3705843687057495,
+        0.49040231108665466,
+        0.2690194845199585
+      ],
+      "dimensions": [
+        0.7450520694255829,
+        0.9803946316242218,
+        0.5381071865558624
+      ]
+    }
+  },
+  "horizontal_span_basis": "max(X_dimension, Y_dimension)",
+  "requested_max_horizontal_span_m": 1000.0,
+  "uniform_scale_applied": 1019.9974252646589,
+  "prepared": {
+    "object_name": "SM_Kraken_Colossal_Diagnostic",
+    "vertices": 976414,
+    "polygons": 1911124,
+    "triangles": 1911124,
+    "material_slots": 1,
+    "material_names": [
+      "tripo_material_137eba30-533d-469f-9fd6-aebe46391af6"
+    ],
+    "uv_layers": 1,
+    "bounds_m": {
+      "min": [
+        -379.9755859375,
+        -500.0,
+        0.0
+      ],
+      "max": [
+        379.9755859375,
+        500.0,
+        548.867919921875
+      ],
+      "dimensions": [
+        759.951171875,
+        1000.0,
+        548.867919921875
+      ]
+    }
+  },
+  "blend": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\KrakenColossal\\SM_Kraken_Colossal_V5.blend",
+  "fbx": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\KrakenColossal\\SM_Kraken_Colossal_V5.fbx",
+  "texture_export_requested": {
+    "path_mode": "COPY",
+    "embed_textures": true
+  }
+}

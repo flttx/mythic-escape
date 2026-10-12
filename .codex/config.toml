@@ -1,0 +1,11 @@
+[mcp_servers.unreal-mcp]
+url = "http://127.0.0.1:8001/mcp"
+
+# Specialized model choices: .codex/agents/explorer.toml (GPT-6 Luna Low)
+# and .codex/agents/ue_worker.toml (GPT-5.6 Terra Medium).
+# Unspecified subagents continue to use the Terra Low fallback below.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 3
+default_subagent_model = "gpt-5.6-terra"
+default_subagent_reasoning_effort = "low"

@@ -1,0 +1,37 @@
+{
+  "fresh_factory_startup": true,
+  "fbx": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\Prepared\\Boat\\SM_Tripo_HeroBoat_Prepared.fbx",
+  "imported_mesh_objects": [
+    {
+      "name": "SM_Tripo_HeroBoat_Prepared",
+      "vertices": 1049617,
+      "polygons": 1978375,
+      "uv_layers": 1,
+      "material_slots": [
+        "tripo_material_5e8b407e-501d-431c-be6f-f025f96c7ed2"
+      ]
+    }
+  ],
+  "imported_non_mesh_objects": [],
+  "imported_cube_objects": [],
+  "bounds_m": {
+    "min": [
+      -3.5,
+      -1.2000000476837158,
+      0.0
+    ],
+    "max": [
+      3.5,
+      1.2000000476837158,
+      1.6050000190734863
+    ],
+    "dimensions": [
+      7.0,
+      2.4000000953674316,
+      1.6050000190734863
+    ]
+  },
+  "vertex_total": 1049617,
+  "polygon_total": 1978375,
+  "status": "FRESH_FBX_REOPEN_AUDIT_NOT_UE_VALIDATED"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "m1-hero-tentacle-hd-v1",
+  "exit_code": 0,
+  "result_file": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\m1-hero-tentacle-hd-v1.result.json",
+  "task_id": "0f7cc023-229f-4d69-ae56-e0a5e954765c",
+  "source_task_id": "50121328-6d5e-434d-927b-be7f72661e13",
+  "status": "success",
+  "model_file": "E:\\Projects\\ue projects\\Mythic Escape\\ArtSource\\Kraken\\Tripo\\tripo-out\\m1-hero-tentacle-hd-v1-convert-0f7cc023\\model.fbx",
+  "preview": null,
+  "credits_consumed": 70
+}

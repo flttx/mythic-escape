@@ -1,0 +1,58 @@
+{
+ "vertices": 976414,
+ "hub_seed_vertices": 34860,
+ "unreachable": 0,
+ "components_total": 3,
+ "small_component_vertices": 0,
+ "parts": [
+  {
+   "component": 1,
+   "vertices": 55994,
+   "max_geodesic_m": 443.7885106700546,
+   "tip": [
+    70.3,
+    109.8,
+    2.3
+   ],
+   "centroid": [
+    65.9,
+    159.4,
+    120.5
+   ],
+   "label": 0
+  },
+  {
+   "component": 0,
+   "vertices": 753171,
+   "max_geodesic_m": 691.6902161835126,
+   "tip": [
+    176.4,
+    417.8,
+    269.9
+   ],
+   "centroid": [
+    79.0,
+    18.2,
+    349.8
+   ],
+   "label": 1
+  },
+  {
+   "component": 2,
+   "vertices": 53774,
+   "max_geodesic_m": 424.77531195038006,
+   "tip": [
+    77.5,
+    -87.3,
+    0.3
+   ],
+   "centroid": [
+    89.2,
+    -151.9,
+    118.6
+   ],
+   "label": 2
+  }
+ ],
+ "welded_vertices": 955562
+}

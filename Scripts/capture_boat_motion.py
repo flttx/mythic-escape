@@ -3,6 +3,7 @@
 This is an irregularly sampled motion sequence, not a realtime video or a timing
 benchmark. Capture latency is retained in the manifest instead of inventing FPS.
 """
+import argparse
 import hashlib
 import json
 import datetime as dt
@@ -14,23 +15,29 @@ from ue_mcp import ROOT, UnrealMCP
 from verify_boat_buoyancy import call, props, AC, O, S, E
 from profile_kraken_boat import command, unique_pie, MAP
 
+EDITOR_PERF = {'refPath': '/Script/UnrealEd.Default__EditorPerformanceSettings'}
 
-def main():
+
+def main(frames=4, label='boat-motion', warmup=8):
     m = UnrealMCP()
     if call(m, E, 'IsPIERunning') or call(m, S, 'get_current_level') != MAP:
         raise RuntimeError('Requires idle playable boat QA map')
-    folder = ROOT/'Artifacts/QA/kraken'/('boat-motion-' + dt.datetime.now().strftime('%Y%m%d-%H%M%S'))
+    folder = ROOT/'Artifacts/QA/kraken'/(label + '-' + dt.datetime.now().strftime('%Y%m%d-%H%M%S'))
     folder.mkdir(parents=True, exist_ok=False)
     receipt = {'source': 'Native PIE GameViewport Shot from possessed physics boat',
         'map': MAP, 'sequence_type': 'irregularly sampled continuous PIE frames; not realtime video',
         'performance_evidence': False, 'frames': []}
     play_settings = {'refPath': '/Script/UnrealEd.Default__LevelEditorPlaySettings'}
     previous_window = props(m, play_settings, ['NewWindowWidth', 'NewWindowHeight'])
+    previous_throttle = props(m, EDITOR_PERF, ['bThrottleCPUWhenNotForeground'])
     try:
+        # An unfocused editor caps PIE at 3 FPS; with the physics/wave clock cap that slows game time.
+        call(m, O, 'set_properties', instance=EDITOR_PERF,
+             values=json.dumps({'bThrottleCPUWhenNotForeground': False}))
         assert call(m, O, 'set_properties', instance=play_settings,
             values=json.dumps({'newWindowWidth': 1920, 'newWindowHeight': 1080}))
         call(m, E, 'StartPIE', options={'bSimulate': False,
-             'playMode': 'PlayMode_InEditorFloating', 'warmupSeconds': 8})
+             'playMode': 'PlayMode_InEditorFloating', 'warmupSeconds': warmup})
         helper = unique_pie(m, 'QA_GameCapture')
         boat = unique_pie(m, 'QA_PhysicsBoat')
         input_helper = unique_pie(m, 'QA_BoatInput')
@@ -44,9 +51,10 @@ def main():
         components = call(m, AC, 'get_components', actor=boat)
         buoy = next(c for c in components if c['refPath'].endswith('.OceanBuoyancy'))
         start = time.monotonic()
-        for i in range(4):
+        for i in range(frames):
             out = folder / ('frame-%02d.png' % i)
             frame = {'index': i, 'request_elapsed_s': time.monotonic() - start,
+                'clock_before': props(m, probe, ['GameTimeSeconds', 'RealTimeSeconds']),
                 'boat_before': call(m, AC, 'get_actor_transform', actor=boat)}
             # Shot copies the existing render target; HighResShot recreates it and
             # was observed to disturb physics during repeated synchronous captures.
@@ -63,6 +71,7 @@ def main():
             frame.update(file=str(out), dimensions=list(struct.unpack('>II', data[16:24])),
                 sha256=hashlib.sha256(data).hexdigest(), completed_elapsed_s=time.monotonic()-start,
                 boat_after=call(m, AC, 'get_actor_transform', actor=boat),
+                clock_after=props(m, probe, ['GameTimeSeconds', 'RealTimeSeconds']),
                 buoyancy=props(m, buoy, ['buoyancyData']))
             assert frame['dimensions'] == expected_dimensions
             receipt['frames'].append(frame)
@@ -84,10 +93,16 @@ def main():
                 instance=play_settings, values=json.dumps(previous_window))
         except Exception as exc:
             receipt['window_restore_error'] = str(exc)
+        call(m, O, 'set_properties', instance=EDITOR_PERF, values=json.dumps(previous_throttle))
         (folder/'receipt.json').write_text(json.dumps(receipt, indent=2), encoding='utf-8')
         print(json.dumps({'folder': str(folder), 'frames': len(receipt['frames']),
                           'error': receipt.get('error')}))
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--frames', type=int, default=4)
+    parser.add_argument('--label', default='boat-motion')
+    parser.add_argument('--warmup', type=float, default=8)
+    args = parser.parse_args()
+    main(args.frames, args.label, args.warmup)

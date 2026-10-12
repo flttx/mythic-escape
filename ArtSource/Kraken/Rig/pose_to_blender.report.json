@@ -1,0 +1,22 @@
+{
+ "joint_head_error_m": 4.274032102102865e-05,
+ "rest_orthonormal_error": 1.4798738290355828e-06,
+ "clips": {
+  "Kraken_Emerge": {
+   "frames": 781,
+   "keys": 261
+  },
+  "Kraken_Idle": {
+   "frames": 1441,
+   "keys": 481
+  },
+  "Kraken_StrikeA": {
+   "frames": 961,
+   "keys": 321
+  },
+  "Kraken_Submerge": {
+   "frames": 661,
+   "keys": 221
+  }
+ }
+}

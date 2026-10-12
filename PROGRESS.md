@@ -1,7 +1,96 @@
 # PROGRESS · Mythic Escape
 
 ## Current
-**M1 正在实施：章节状态蓝图已通过真实 PIE 25 项契约检查；可控物理船已接入原生四浮筒，前进、减速、转舵与独立观察通过 PIE。V5 高精 Tripo 主体已在真实船上视角调整朝向/出水高度，但仍是静态审查资产。当前重点是停顿下的浮力稳定性、船舱水体裁切与生物骨骼交互。14–18 分钟完整首章及电影级实时视觉验收尚未完成。**
+**M1 正在实施，尚未完成。章节状态已有真实 PIE 25 项契约记录；可控物理船与长帧物理/波浪同步修复已有运行证据。环境 R4 已保存；V5 高精主体已完成骨骼绑定、4 个动画片段和 UE 导入，QA 图已放置动画主体，不再是纯静态展示。骨骼版本的实时性能、打击视觉和浮力回归尚未通过，最近一轮受 D3D12/GPU 环境问题阻塞。完整路线、游泳/HUD/检查点恢复、接触水效及 14–18 分钟全章首通仍未完成；电影级实时视觉未验收。**
+
+
+## 进度核对与提交 · 2026-10-12
+
+### Completed
+- 整理本地已保存的环境 R4、物理/波浪时钟同步配置、V5 骨骼/动画源资产与 UE 资产，以及导入、放置、采集和海况验证脚本，作为 M1 开发恢复点。
+- 修正 Current 的静态主体旧描述；动画数值以当前 `ArtSource/Kraken/Rig/anim.report.json` 为准：StrikeA 最大梢速为 101.5m/s，求解误差 1.81m。
+- 移除 UE 自动写入的本机 Android 服务令牌；保留原网络设置。历史记录注明的无关自动重存 `BP_QA_BuoyantBoat.uasset` 保留在工作区，不纳入本次提交。
+
+### Evidence
+- 本轮实际执行：`python -m unittest discover -s Scripts/tests -v`，6/6 通过；Scripts 与新 Rig 目录共 30 个 Python 文件 AST 解析通过，新 Rig JSON 全部解析通过；`git diff --check` 通过。
+- 只读复核本地原始凭据：`kraken-rig-import.json` 为 976,414 顶点、152 骨、保存成功；`seakeeping-final-3fps-20261012-142744/receipt.json` 与 `seakeeping-final-12fps-20261012-142857/receipt.json` 的正常、限帧、恢复阶段均有有效样本，无相机入水和上浪。
+- 上述是既有运行凭据核对；本轮没有重跑 UE/Blender、蓝图编译、实时性能或视觉验收。原始 QA 数据仍在本地忽略目录 `Artifacts/QA/kraken/`，不随 Git 推送。
+
+### Blockers
+- 骨骼版本性能与 GPU 稳定性仍未验证；此前浏览器 GPU 负载为历史观察，本轮未复测当前占用。
+- QA 工具限制：海况脚本的 `passed` 仅检查相机入水，空有效样本也可能返回通过，后续验收必须同时检查样本数、干舷和无效查询；环境脚本在已有 PPV 上重做后不能完整回滚旧后期设置。当前提交保留实现并明确限制，不将其作为完整自动验收/回滚保证。
+
+### Next
+1. GPU 环境稳定后，对已保存骨骼版本复测浮动 PIE、带游戏时间戳的动作画面、帧耗时与海况，先修正上述 QA 工具边界。
+2. 接通导演状态到动画、水面接触事件和 K4 托举，同时推进船舱遮罩、白沫/溅水。
+3. 补齐 FullChapter 路线、游泳、HUD、检查点恢复与全章首通；内容线及 A–E 真实玩家视角/性能均通过后才关闭 M1。
+
+## 克拉肯骨骼动画（进行中）· 2026-10-12
+
+### Completed
+- **现状盘点**：V5 主体为单一静态网格（976,414 顶点、1.9M 三角面，臂展 1000m），无骨骼。旧 V2 独立触手只有正弦摆动，且 Idle 有 1.35m 接缝，不作为主体方案。决定复用 V5 高精网格，不重做模型，也不减面。
+- **自动绑定**（`ArtSource/Kraken/Rig/`，numpy 实现，不经 Blender 猜测）：
+  - 焊接 UV 缝后，从触手枢纽计算表面测地距离。150m 阈值下稳定分出外套膜和 8 条腕（150–300m 区间结果一致）；腕与外套膜在接触处相连，通过流域分割回填到枢纽。
+  - 在各部位内部用受限测地距离（避免经接触点抄近路）提取环形质心作为中心线，生成 151 骨：root/head、外套膜 5 节、8×18 腕节，腕长 405–647m。
+  - 蒙皮用高斯平滑多骨权重（最多 4 个影响骨），腕根与头部在 45m 内过渡，权重和为 1。
+  - 预览：`segmentation.report.json`、`rig.report.json`、`preview_rig.py`。
+- **程序化表演**（`animate_kraken.py`，正向运动学，所有片段首尾都落在 Idle 第 0 帧的姿态上，接缝误差均为 0m）：
+  - Idle：48s 无缝循环。每条腕有独立相位、波数和周期（24/16/9.6s 谐波），由根向梢传递，幅度向梢递增。外套膜做 12s 呼吸脉动，身体缓慢升沉、偏航和横滚。最大梢速 19.6m/s。
+  - Emerge：26s，从 -330m 上浮，约 6.6s 破水，外套膜先出水，腕拖在后面再由梢向外展开。
+  - StrikeA：32s，arm4。0–3.5s 起势；约 9.5s 立起，梢部高出海面约 260m，并朝船道倾身；3.5–14s 为可读的预警段，包括盘绕和蓄力；之后 6.5s 加速下砸，落点用数值求解，误差 1.8m，位置在船前 45m、偏侧 30m 的海面；最后拖拽并缓慢收回。
+  - Submerge：22s，下沉 340m。
+  - 瞬态动作叠加在 Idle 上，并经过逐骨延迟的阻尼弹簧，梢部更重、更慢，产生惯性、过冲和回稳。下砸的梢速受“不快于从约 240m 处坠落”约束：首版峰值 175m/s，通过放慢时长并缩短弧线降到约 101.5m/s（以当前 anim.report.json 为准）。
+- **Blender 两遍处理**（blender-cli 证据计划已封存：`assemble_plan.json`、`bake_plan.json`）：
+  - 第 1 遍：顶点顺序与 GLB 逐点一致（偏差 0.0m），写入 3.73M 条权重，导出 `Bone.matrix_local`。
+  - 第 2 遍：numpy 把骨骼空间旋转换算为骨骼局部旋转（P = BᵀQB，根骨平移 = BᵀT），静止姿态骨骼与推导结果误差 0.04mm；以 10Hz 打四元数关键帧，导出包含全部动作的 `SK_Kraken_V5.fbx`。
+- **UE 导入**（`Scripts/import_kraken_rig.py`）：`/Game/.../Kraken_V5/Rig/SK_Kraken_V5`（976,414 顶点、152 骨）及 4 个 AnimSequence，使用湿皮肤材质，包围盒与静态版完全一致。`Scripts/place_kraken_animated.py` 在 QA 图中放置 `Kraken_V5_Animated`（与静态版同一变换，播放 Idle，关闭碰撞，离屏仍更新骨骼），静态版移到海面下 5km 留作对照，已保存。
+- 用场景射线验证坐标映射：UE 导入时 Blender 的 Y 轴取反。四个预测点在该假设下均在预期高度 ±4m 内命中，因此打击落点所用的船体局部坐标是正确的。
+- 真实 PIE 玩家视角下 Idle 和 StrikeA 均正常渲染并播放，未见撕裂：`kraken-anim-idle-20261012-151422/`、`kraken-strikea-play-20261012-152536/contact-sheet.png`。
+
+### Blockers / 问题
+- **GPU 环境阻塞**：加入骨骼克拉肯后，编辑器三次 D3D12 设备崩溃（两次在 PIE 启动时创建 16384×4096×2 的 VSM 页池；一次在启动时出现 E_OUTOFMEMORY，而本进程显存只用了 2.9/7.3GB）。随后发现编辑器退出后 GPU 仍有 100% 占用，Chrome(PID 5796) 约占 100% GPU 和 1.8GB 显存，Edge 另占 1.4GB。这与早先的 SW Power Cap 和 GPU 帧时间 31–63ms 波动一致。需要用户处理浏览器负载后再继续实机验证。
+- 骨骼网格尚未启用 Nanite（在编辑器崩溃前未能保存），目前是 976k 顶点在每个渲染通道里做顶点着色器蒙皮，性能未测（NOT_MEASURED）。
+- 打击片段的实时视觉尚未判定：首轮截帧缺少游戏时间戳，无法与动画时间对应。已在 `BP_QA_ViewportProbe` 加入 `GameTimeSeconds`/`RealTimeSeconds`，并写入 `capture_boat_motion.py` 的回执。
+- 尚未完成：遭遇时间线（导演状态 → 片段播放）、水面交互事件点（骨骼世界位置与水面高度比较）、K4 托举触手、seakeeping 回归。
+
+## 船体淹没修复：物理与波浪时钟同步 · 2026-10-12
+
+### Completed
+- 新增 `Scripts/verify_boat_seakeeping.py`：PIE 浮动窗口中不截图连续采样，记录相机距局部水面高度（负值即入水）、最小干舷（负值即上浪）、浮筒入水数，并记录运行时的物理和时间设置。可用 `t.MaxFPS` 模拟长帧。测试期间临时关闭编辑器后台限帧，结束后恢复。浮筒离开水体时 waterHeight 会返回约 -100000 的哨兵值，这类样本已排除。
+- **根因：长帧导致物理与波浪不同步。** 波浪使用世界时间（`UWaterSubsystem::GetWaterTimeSeconds`），每帧最多推进 0.4s；物理每帧最多推进 1/30s，且未开子步。帧时长超过 33ms 时（截图、着色器编译、后台限帧、低端机卡顿），波浪跑在船前面，船先悬空再被浪淹没。确定性对照：同样的原浮力参数，在高且稳定的帧率下 30 秒采样 775 次，相机入水 0 次、上浪 0 次；在 12FPS 下相机入水 46/88 次（最深 -225cm）。
+- **修复（仅改 Config，浮力参数保持原值）**：`DefaultEngine.ini` 开启物理子步（`MaxSubstepDeltaTime=1/60`、`MaxSubsteps=4`）；`DefaultGame.ini` 设置 `WorldSettings.MaxUndilatedFrameTime=0.066667`，QA 地图实例也已存为相同值。效果：15FPS 以上物理与波浪完全同步；更低帧率时整体均匀放慢，计时器同步放慢，不会出现船体与波浪脱节。
+- 排除方案：变体 B（系数 0.7、浮筒 +45cm）俯仰最大 45°，浮筒频繁出水，不采用；Blueprint 已恢复并保存为原值（0.25 / 0cm / 阻尼 1000）。注意 UE 浮力阻尼只抵抗上升速度（`BuoyancyComponent.cpp:359-364`）。
+- 发现测试工具陷阱：编辑器主窗口最小化时，`AreAllWindowsHidden()` 会把视口内 PIE 限到 3FPS；浮动窗口失去焦点时还会触发后台限帧。早期视口内采样结论（4/4 输入、10/10 浮力）可能是在 3FPS 下测得的，需在浮动窗口中重测。
+- 波形源码核实：`GerstnerWaves_Ocean` 的振幅与波长共用同一插值参数（最大 60m 波长对应 0.8m 振幅），属于平缓长涌。实测周期 5–7s，水面标准差约 1.3m。
+
+### Evidence
+- 重启编辑器后，PhysicsSettings 和 WorldSettings 的 CDO 读到 ini 中的值（0.016667 / 0.066667）。在 Config 生效状态下：`seakeeping-final-3fps-20261012-142744/`（正常阶段 782 次采样：相机最低高于水面 26cm，干舷最小 20cm；3FPS 与恢复阶段均通过）；`seakeeping-final-12fps-20261012-142857/`（12FPS 阶段：相机最低高于水面 28cm，干舷最小 22cm，无入水/上浪）。对照组：`seakeeping-T3-orig-12fps-*`、`seakeeping-T3-sync-12fps-*`、`seakeeping-orig-detail-*`、`seakeeping-T1-B-*`。
+- 连续 4 张截图不再淹船：`boat-motion-synced-20261012-143017/`（4 帧中船高与局部水面一致，4 个浮筒均入水）。
+- 性能：子步开/关/开 A/B 测试中，游戏线程耗时 5.91 / 5.90 / 5.80ms，无可测 CPU 成本（`boat-performance-20261012-143318/`、`-143401/`、`-143443/`）。但本轮 GPU 处于软件功耗限制（SW Power Cap Active），且不受开关影响地在 31–63ms 间波动，因此**本轮绝对帧耗时 NOT_MEASURED**，不能与之前的 17ms 比较。
+
+### Blockers / Next
+- 船舱内水面穿插（遮罩）未处理；风暴波形尚未加强（当前涌浪已较大，视觉缺的主要是浪尖白沫和碎浪细节）。
+- 编辑器每次启动会向 DefaultEngine.ini 写入 Android 文件服务令牌，已手动移除，提交前需检查。`BP_QA_BuoyantBoat.uasset` 的启动自动重存仍未纳入。
+- 下一步候选：浪尖/接触白沫与溅水；船舱水体遮罩；在浮动窗口中重测早期输入与浮力用例。
+
+## 环境视觉 Pass R4 · 2026-10-12
+
+### Completed
+- 用户反馈视觉不满意并选择“环境先行”。诊断原因：雾密度 0.0005 近乎无雾，导致 1000m 巨兽失去空气透视；模板 `SM_SkySphere`（`M_SimpleSkyDome`）遮挡物理天空并造成硬地平线；无 PostProcessVolume；太阳位于相机后方，正面平光；云覆盖偏低；水体散射偏青。
+- 新增 `Scripts/apply_kraken_environment.py`，修改前回读并写入凭据，可用 `--revert` 回滚。改动仅涉及 `L_KrakenPlayableBoatQA` 的天空/雾/光照/后期，以及共享的 `MI_KrakenOcean_Storm`（散射、法线强度）和 `MI_KrakenStormClouds`（覆盖、密度）。**未改动波形和浮力**。两个材质实例同时被 BoatControl、OceanReview、BuoyancyQA 三张 QA 图引用。
+- 迭代 4 轮真实 PIE 玩家视角画面：R1 雾过浓且偏棕；R2 雾消失，并发现 `Cloud_GlobalCoverage` 方向相反（数值越大云越少）；R3/R4 收敛为低空海雾、厚云层、冷灰色调、前左方低角度太阳形成轮廓光和海面反光带。已保存地图和两个材质实例。
+- `capture_boat_motion.py` 增加 `--frames/--label/--warmup` 参数。刚启动的编辑器在 8 秒预热时船尚未稳定，对比采集改用 25 秒预热。
+
+### Evidence
+- 最终凭据（before 字段为原始基线）：`Artifacts/QA/kraken/env-look-20261012-135726/receipt.json`。基线/R1–R4 画面：`env-before-20261012-134934/`、`env-r1…r4-*/`；并排对比 `env-look-r4-compare.png`。
+- 同一会话 A/B 性能（RTX 3050，1914×994，20 秒原生 CSV，采样窗口内不截图）：平均帧耗时 **16.87→17.41ms**，GPU **16.23→16.76ms**，P95 23.13→23.99ms：`boat-performance-20261012-135648/` 与 `-135736/`。另有一次测量因编辑器处于后台被节流到 3FPS，已作废（`-135530/`）。测量期间临时关闭 `bThrottleCPUWhenNotForeground`，测后已恢复。
+- 脚本 py_compile 通过，MCP 单测 6/6。
+
+### Blockers / Next
+- 实时视觉门仍为 **PARTIAL**：氛围和尺度已改善，但缺少浪尖白沫、巨兽与水面接触泡沫/溅水、湿润皮肤材质；巨兽静止，近景仍有黏土感。画面未获用户认可。
+- R4 第 2 帧再次出现船淹没、镜头入水（浮力在截帧停顿下的已知问题，z≈-55→-66cm），与本次环境改动无关，仍待修。
+- 编辑器启动时自动回写 Android 文件服务令牌（已用 git 还原）并重存了 `BP_QA_BuoyantBoat.uasset`（签出失败后的自动保存，非本次改动，未纳入）。
+- 下一步候选：①风暴波形加强及浮力复测；②接触白沫/Niagara 溅水；③巨兽湿皮肤材质。
 
 ## 提交快照 · 2026-10-12
 

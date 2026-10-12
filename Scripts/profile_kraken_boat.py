@@ -15,7 +15,9 @@ MAP = '/Game/MythicEscape/Chapters/Kraken/QA/L_KrakenPlayableBoatQA'
 DSL = '''(event EventTick (DeltaSeconds)
   (bind size (Viewport|GetViewportSize))
   (Variables|Default|SetViewportWidth (.x size))
-  (Variables|Default|SetViewportHeight (.y size)))'''
+  (Variables|Default|SetViewportHeight (.y size))
+  (Variables|Default|SetGameTimeSeconds (Utilities|Time|GetGameTimeinSeconds))
+  (Variables|Default|SetRealTimeSeconds (Utilities|Time|GetRealTimeSeconds)))'''
 
 
 def author(m):
@@ -28,7 +30,7 @@ def author(m):
              asset_name=PROBE.rsplit('/', 1)[1], asset_type=reference('/Script/Engine.Actor'))
     bp = reference(PROBE)
     known = call(m, B, 'list_variables', blueprint=bp)
-    for name in ['ViewportWidth', 'ViewportHeight']:
+    for name in ['ViewportWidth', 'ViewportHeight', 'GameTimeSeconds', 'RealTimeSeconds']:
         if name not in known:
             call(m, B, 'add_variable', blueprint=bp, name=name, type_name='float')
         call(m, B, 'set_variable_instance_editable', blueprint=bp, variable_name=name, instance_editable=True)

@@ -1,0 +1,71 @@
+{
+ "fps": 30,
+ "bones": 151,
+ "clips": {
+  "Kraken_Emerge": {
+   "surface_break_s": 6.635491110850737,
+   "frames": 781,
+   "seconds": 26.0,
+   "max_bone_rotation_deg": 8.01,
+   "max_tip_speed_mps": 51.5,
+   "root_z_range_m": [
+    -331.6,
+    0.9
+   ],
+   "end_vs_idle0_m": 0.0
+  },
+  "Kraken_Idle": {
+   "loop_s": 48.0,
+   "frames": 1441,
+   "seconds": 48.0,
+   "max_bone_rotation_deg": 3.11,
+   "max_tip_speed_mps": 19.6,
+   "root_z_range_m": [
+    -3.5,
+    3.1
+   ]
+  },
+  "Kraken_StrikeA": {
+   "strike_arm": "arm4",
+   "target_local_m": [
+    490.0,
+    -245.2,
+    286.0
+   ],
+   "solve_error_m": 1.81,
+   "slam_key_s": 20.5,
+   "warning_window_s": [
+    3.5,
+    14.0
+   ],
+   "boat_local_assumed_m": [
+    511.0,
+    -295.0,
+    280.0
+   ],
+   "frames": 961,
+   "seconds": 32.0,
+   "max_bone_rotation_deg": 10.7,
+   "max_tip_speed_mps": 101.5,
+   "root_z_range_m": [
+    -3.5,
+    3.1
+   ],
+   "end_vs_idle0_m": 0.0,
+   "start_vs_idle16_m": 0.0
+  },
+  "Kraken_Submerge": {
+   "fully_submerged_s": 20.0,
+   "frames": 661,
+   "seconds": 22.0,
+   "max_bone_rotation_deg": 5.31,
+   "max_tip_speed_mps": 57.6,
+   "root_z_range_m": [
+    -341.7,
+    2.6
+   ],
+   "start_vs_idle0_m": 0.0
+  }
+ },
+ "idle_loop_seam_m": 0.0
+}
